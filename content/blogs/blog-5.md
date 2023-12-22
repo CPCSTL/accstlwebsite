@@ -6,7 +6,7 @@ date: 2022-08-04T05:00:00Z
 draft: false
 ---
 
-<!-- ##### Heading example -->
+##### Heading example
  two came together invited another became theree Here is an example 
 Here is an example of headings. You can use this heading by the following markdown rules. For example: use `#` for heading 1 and use `######` for heading 6.
 
