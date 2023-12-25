@@ -94,7 +94,7 @@ const Home = ({ frontmatter }) => {
                       service.images.length > 1 ? { clickable: true } : false
                     }
                     autoplay={{
-                      delay: 5000,
+                      delay: 3000,
                       disableOnInteraction: false,
                     }}
                     init={service?.images > 1 ? false : true}
