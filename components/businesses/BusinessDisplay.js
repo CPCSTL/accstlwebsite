@@ -72,16 +72,16 @@ const CategoriesFilter = ({ onSelectCategory }) => (
         gridAutoRows:"minmax(75px,auto)",
         gridGap:2,
         width:"100%",
-        maxWidth:500,
+        
         ml:"auto",
         mr:"auto",
         mb:2
 }}>
-        <Button variant="outlined" sx={{width:"fit-content"}} onClick={() => onSelectCategory('Middle Eastern Restaurant')}><p style={{width:"fit-content"}}>Middle Eastern Restaurants</p></Button>
-        <Button variant="outlined" sx={{width:"fit-content"}} onClick={() => onSelectCategory('Immigration Attorney')}>Immigration Attorneys </Button>
-        <Button variant="outlined" onClick={() => onSelectCategory('Hair Saloon')}> Hair Saloons</Button>
-        <Button variant="outlined" onClick={() => onSelectCategory('Grocery Store')}>Grocery Stores</Button>
-        <Button variant="outlined" onClick={() => onSelectCategory('')}>Show All</Button>
+        <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('Middle Eastern Restaurant')}><p style={{width:"fit-content"}}>Middle Eastern Restaurants</p></Button>
+        <Button variant="outlined" sx={{width:"100%"}}  onClick={() => onSelectCategory('Immigration Attorney')}>Immigration Attorneys </Button>
+        <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('Hair Saloon')}> Hair Saloons</Button>
+        <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('Grocery Store')}>Grocery Stores</Button>
+        <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('')}>Show All</Button>
     </Box>
 );
 
