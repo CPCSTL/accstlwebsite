@@ -3,11 +3,20 @@ import config from "@config/config.json";
 import menu from "@config/menu.json";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from 'react-redux';
+import { showToast } from 'utils/functions';
+import { clearNotifications } from 'store/reducers/notifications.reducer';
+import { signOutUser } from 'store/reducers/user.reducer';
 
 const Header = () => {
   //router
   const router = useRouter();
+
+  // redux
+  const dispatch = useDispatch()
+  const notifications = useSelector(state=>state.notifications)
+const user = useSelector(state=>state.user)
 
   // distructuring the main menu from menu object
   const { main } = menu;
@@ -18,6 +27,26 @@ const Header = () => {
   // logo source
   const { logo } = config.site;
   const { enable, label, link } = config.nav_button;
+
+  // useEffect
+  useEffect(() => {
+ 
+    let {global} = notifications
+     
+    if(notifications && global.success){
+      const msg = global.msg ? global.msg : "Success"
+      showToast("SUCCESS", msg);
+      dispatch(clearNotifications())
+    }
+    if(notifications && global.error){
+      const msg = global.msg ? global.msg : "Error"
+      showToast("ERROR", msg)
+      dispatch(clearNotifications())
+    }
+    
+    
+    }, [notifications])
+
 
   return (
     <header className="header">

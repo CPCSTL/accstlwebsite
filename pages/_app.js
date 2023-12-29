@@ -4,6 +4,11 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import TagManager from "react-gtm-module";
 import "styles/style.scss";
+import { Provider } from 'react-redux';
+import {store} from "../store/index"
+// import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import LayOutMain from "@layouts/layoutMain/LayOutMain";
 
 const App = ({ Component, pageProps }) => {
   // default theme setup
@@ -35,6 +40,7 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <>
+    <Provider store={store}>
       <Head>
         {/* google font css */}
         <link
@@ -53,7 +59,11 @@ const App = ({ Component, pageProps }) => {
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
       </Head>
+      <LayOutMain>
       <Component {...pageProps} />
+      </LayOutMain>
+      
+      </Provider>
     </>
   );
 };
