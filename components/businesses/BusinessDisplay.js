@@ -62,11 +62,11 @@ const BusinessCard = ({ business }) => (
 
 const CategoriesFilter = ({ onSelectCategory }) => (
     <Box sx={{ display: 'flex', flexDirection: 'row', marginBottom: 2, gap: 1 }}>
-        <Button variant="outlined" sx={{backgroundColor:"red"}} onClick={() => onSelectCategory('Middle Eastern Restaurant')}>Middle Eastern Restaurants</Button>
-        <Button variant="outlined" sx={{bgcolor:"blue"}} onClick={() => onSelectCategory('Immigration Attorney')}>Immigration Attorneys</Button>
-        <Button variant="outlined" sx={{bgcolor:"blue"}} onClick={() => onSelectCategory('Hair Saloon')}>Hair Saloons</Button>
-        <Button variant="outlined" sx={{bgcolor:"blue"}} onClick={() => onSelectCategory('Grocery Store')}>Grocery Stores</Button>
-        <Button variant="outlined" sx={{bgcolor:"blue"}} onClick={() => onSelectCategory('')}>Show All</Button>
+        <Button variant="outlined" onClick={() => onSelectCategory('Middle Eastern Restaurant')}>Middle Eastern Restaurants</Button>
+        <Button variant="outlined"  onClick={() => onSelectCategory('Immigration Attorney')}>Immigration Attorneys</Button>
+        <Button variant="outlined" onClick={() => onSelectCategory('Hair Saloon')}>Hair Saloons</Button>
+        <Button variant="outlined" onClick={() => onSelectCategory('Grocery Store')}>Grocery Stores</Button>
+        <Button variant="outlined" onClick={() => onSelectCategory('')}>Show All</Button>
     </Box>
 );
 
@@ -79,7 +79,7 @@ const BusinessList = () => {
 
     return (
         <Box sx={{
-            mt: 2,
+            mt: 9,
             width: '90%',
             ml: 'auto',
             mr: 'auto',
