@@ -6,8 +6,8 @@ import { useDispatch } from 'react-redux'
 import { signOutUser } from 'store/reducers/user.reducer'
 
 const index = () => {
-    const dispatch = useDispatch()
-    const router = useRouter()
+    // const dispatch = useDispatch()
+    // const router = useRouter()
 
   return (
     <AdminLayout>
@@ -20,8 +20,8 @@ const index = () => {
     
     onClick={
         ()=>{
-     dispatch(signOutUser())
-    router.push('/')
+    //  dispatch(signOutUser())
+    // router.push('/')
          
  }
      } >
