@@ -93,12 +93,7 @@ const RegisterBusinessContainer = () => {
     </Button>
     </Box>
     
-<Box sx={{minHeight:"50vh"}}>
-<object data="/public/alenteshaar-720.pdf" type="application/pdf" width="100%" height="100%">
-<p>Unable to display PDF file. <a href="/public/alenteshaar-720.pdf">Download</a> instead.</p>
-</object>
-<h1>hello</h1>
-</Box>
+
 
     </Box>
   
