@@ -61,12 +61,27 @@ const BusinessCard = ({ business }) => (
 );
 
 const CategoriesFilter = ({ onSelectCategory }) => (
-    <Box sx={{ display: 'flex', flexDirection: 'row', marginBottom: 2, gap: 1 }}>
-        <Button variant="outlined" onClick={() => onSelectCategory('Middle Eastern Restaurant')}><p style={{width:"95%"}}>ShowMiddle Eastern Restaurants</p></Button>
-        <Button variant="outlined"  onClick={() => onSelectCategory('Immigration Attorney')}><p style={{width:"95%"}}>ShowImmigration Attorneys </p></Button>
-        <Button variant="outlined" onClick={() => onSelectCategory('Hair Saloon')}><p style={{width:"95%"}}>ShowHair Saloons</p></Button>
-        <Button variant="outlined" onClick={() => onSelectCategory('Grocery Store')}><p style={{width:"95%"}}>ShowGrocery Stores</p></Button>
-        <Button variant="outlined" onClick={() => onSelectCategory('')}><p style={{width:"95%"}}>Show All</p></Button>
+    <Box sx={{ display:"grid",
+        gridTemplateColumns:{
+            xs:"repeat(2,1fr)",
+            sm:"repeat(2,1fr)",
+            md:"repeat(3,1fr)",
+            lg:"repeat(5,1fr)",
+            xl:"repeat(5,1fr)",
+        },
+        gridAutoRows:"minmax(75px,auto)",
+        gridGap:2,
+        width:"100%",
+        maxWidth:500,
+        ml:"auto",
+        mr:"auto",
+        mb:2
+}}>
+        <Button variant="outlined" sx={{width:"fit-content"}} onClick={() => onSelectCategory('Middle Eastern Restaurant')}><p style={{width:"fit-content"}}>ShowMiddle Eastern Restaurants</p></Button>
+        <Button variant="outlined" sx={{width:"fit-content"}} onClick={() => onSelectCategory('Immigration Attorney')}>ShowImmigration Attorneys </Button>
+        <Button variant="outlined" onClick={() => onSelectCategory('Hair Saloon')}> ShowHair Saloons</Button>
+        <Button variant="outlined" onClick={() => onSelectCategory('Grocery Store')}>ShowGrocery Stores</Button>
+        <Button variant="outlined" onClick={() => onSelectCategory('')}>Show All</Button>
     </Box>
 );
 
