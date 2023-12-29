@@ -77,10 +77,10 @@ const CategoriesFilter = ({ onSelectCategory }) => (
         mr:"auto",
         mb:2
 }}>
-        <Button variant="outlined" sx={{width:"fit-content"}} onClick={() => onSelectCategory('Middle Eastern Restaurant')}><p style={{width:"fit-content"}}>ShowMiddle Eastern Restaurants</p></Button>
-        <Button variant="outlined" sx={{width:"fit-content"}} onClick={() => onSelectCategory('Immigration Attorney')}>ShowImmigration Attorneys </Button>
-        <Button variant="outlined" onClick={() => onSelectCategory('Hair Saloon')}> ShowHair Saloons</Button>
-        <Button variant="outlined" onClick={() => onSelectCategory('Grocery Store')}>ShowGrocery Stores</Button>
+        <Button variant="outlined" sx={{width:"fit-content"}} onClick={() => onSelectCategory('Middle Eastern Restaurant')}><p style={{width:"fit-content"}}>Middle Eastern Restaurants</p></Button>
+        <Button variant="outlined" sx={{width:"fit-content"}} onClick={() => onSelectCategory('Immigration Attorney')}>Immigration Attorneys </Button>
+        <Button variant="outlined" onClick={() => onSelectCategory('Hair Saloon')}> Hair Saloons</Button>
+        <Button variant="outlined" onClick={() => onSelectCategory('Grocery Store')}>Grocery Stores</Button>
         <Button variant="outlined" onClick={() => onSelectCategory('')}>Show All</Button>
     </Box>
 );
