@@ -29,7 +29,7 @@ const SignIn = (props)=>{
      
 
     const formik = useFormik({
-       initialValues:{email:"", password:"" , page:"officers"},
+       initialValues:{email:"", password:"" },
        validationSchema:yup.object({
         email:yup.string().required("email required").email("invalid email"),
         password:yup.string().required("password required").max(30,"max char 30").min(5,"minimum char 5")

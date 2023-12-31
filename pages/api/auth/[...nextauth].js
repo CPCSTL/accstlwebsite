@@ -29,6 +29,7 @@ export const authOptions =     {
 
                 //// check if the user exists
                 const user = await findUserByEmail(credentials.email,{});
+                console.log(user,"__user at next auth");
                 if(!user){
                     throw new Error('No email was found')
                 }
@@ -42,10 +43,11 @@ export const authOptions =     {
                 
                 return {
                     email:user.email,
-                    name:user.name,
+                    firstName:user.firstName,
+                    lastName:user.lastName,
                     image:user.image,
                     role:user.role,
-                    id:user._id
+                    // id:user._id
                 }
            } 
         })

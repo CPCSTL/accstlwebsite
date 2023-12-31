@@ -2,6 +2,7 @@ import Show from 'db/models/show.model';
 
 import { showValidation } from 'utils/validations';
 import { validateBody } from 'db/utils/tools'; 
+import File from 'db/models/file.model';
 
 export const addShow = async(req) => {
     const body = req.body;
@@ -66,6 +67,18 @@ export const getBySlug = async(query) => {
     }
 
 }
+export const getById = async(query) => {
+    try{
+        const res = await File.find({_id:query.slug}).exec();
+        if(res.length <= 0){
+            return;
+        }
+        return res;
+    } catch(error){
+        throw error;
+    }
+
+}
 
 export const updateBySlug = async(slug,body) => {
     try{
@@ -89,6 +102,20 @@ export const getAllShows = async (sortBy, order , limit , skip)=>{
         .skip(parseInt(skip))
         .limit(parseInt(limit));
          return shows 
+    } catch (error) {
+        throw error
+    }
+
+}
+export const getAllStatments = async (sortBy, order , limit , skip)=>{
+    try {
+        const statements = await File.find({fileType:"statement"}).sort([
+            [sortBy,order]
+        ])
+        .skip(parseInt(skip))
+        .limit(parseInt(limit));
+        console.log(statements,"__statements at service");
+         return statements 
     } catch (error) {
         throw error
     }

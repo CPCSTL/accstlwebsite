@@ -91,9 +91,12 @@ const ConfirmModal = ({api , message, grid,rowId, color })=> {
                 color:"red" ,
                 border:" 1px solid red",    
                 padding: "10px",
+                textAlign:"center",
+                // want the string to have capitial letters
+                textTransform:"capitalize",
           }}>{message }</p>}
-            <h2 >Are you sure?</h2>
-            <p >
+            {!message ? <h2 >Are you sure?</h2> : ""}
+            <p style={{textAlign:"center", marginTop:"20px", marginBottom:"20px"}} >
              There is no going back!!
             </p>
             <div style={{display:"flex" , flexDirection:"row", justifyContent:"space-evenly" , width:"100%", marginTop:"10px"}}>

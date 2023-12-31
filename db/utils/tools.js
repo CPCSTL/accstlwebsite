@@ -9,6 +9,7 @@ export const passwordHash = async(password) => {
 };
 
 export const checkPassword = async (password,hashedPassword)=>{
+    console.log(password,hashedPassword,"__passwords at password check");
  const valid = await compare(password,hashedPassword)
 if (!valid) {
     console.log("cant compare passwords");

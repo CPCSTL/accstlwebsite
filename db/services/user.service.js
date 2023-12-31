@@ -9,7 +9,7 @@ export const userExists = async(email) => {
 }; 
 
 export const findUserByEmail = async (email, select)=>{
-    const user = await User.findOne({email:email}).select('email name role _id');
+    const user = await User.findOne({email:email})
     return user
 };
 

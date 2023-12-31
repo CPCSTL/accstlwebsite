@@ -11,6 +11,7 @@ import { createSlice } from "@reduxjs/toolkit";
             state.global.msg = action.payload
         },
         errorGlobal : (state,action)=>{
+            console.log(action.payload, "action.payload at errorGlobal");
             state.global.error = true
             state.global.msg = action.payload
         },

@@ -11,6 +11,8 @@ let grantsObject = {
         statements:{
             
             'read:any':['*'],
+            'update:any':['*'],
+            'delete:any':['*'],
          
         },
     },

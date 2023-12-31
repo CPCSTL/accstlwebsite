@@ -33,6 +33,7 @@ export const registerUser = createAsyncThunk(
 export const signInUser = createAsyncThunk(
     'user/signInUser',
     async({values,router},{dispatch})=>{
+        console.log(values,"__values at sigin thunk");
         try {
             const results =   await signIn("credentials",{
                 redirect:false,
@@ -40,6 +41,7 @@ export const signInUser = createAsyncThunk(
                 password:values.password
             })
             if(results.error){
+                console.log(results.error, "results.error at thunk");
                 return dispatch(errorGlobal(results.error, "error signing in"))
             }
             

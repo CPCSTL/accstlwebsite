@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Box, IconButton, Modal, Button, TextField, LinearProgress } from '@mui/material';
@@ -7,6 +7,10 @@ import Image from 'next/image';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import axios from 'axios';
 import { storage } from 'utils/firebase';
+import { useDispatch } from 'react-redux';
+import { successGlobal } from 'store/reducers/notifications.reducer';
+import {refreshReducer} from 'store/reducers/refresh.reducer';
+
 
 
 
@@ -14,6 +18,10 @@ const AddStatement = () => {
   const [open, setOpen] = useState(false);
   const [file, setFile] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
+
+// redux
+  const dispatch = useDispatch();
+  
 
   const formik = useFormik({
     initialValues: {
@@ -40,11 +48,15 @@ const AddStatement = () => {
           async () => {
             const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
             const statementData = { ...values, imageUrl: downloadURL, action: 'add' };
-
+               console.log(statementData);
             try {
               const response = await axios.post('/api/statements/crud', statementData);
               console.log('Statement added:', response.data);
+              dispatch(successGlobal('client Statement added successfully'));
+              setFile(null);
+              formik.resetForm();
               setOpen(false); // Close the modal upon successful upload
+              dispatch(refreshReducer());
             } catch (error) {
               console.error('Error submitting statement:', error);
             }
@@ -53,6 +65,14 @@ const AddStatement = () => {
       }
     }
   });
+  useEffect(() => {
+  
+    return () => {
+      
+      URL.revokeObjectURL(file);
+      setUploadProgress(0);
+    }
+  }, [file]);
 
   return (
     <Box>
@@ -137,7 +157,7 @@ const AddStatement = () => {
               <Box sx={{ height: "50px" }}>
                 <h5>{formik.values.title}</h5>
               </Box>
-              <Image src={file ? URL.createObjectURL(file) : "/images/logo.png"} alt="Preview" width={500} height={500} />
+              <Image src={file ? URL.createObjectURL(file) : ""} alt="Preview" width={500} height={500} />
             </Box>
           </Box>
           <Box
@@ -151,8 +171,11 @@ const AddStatement = () => {
               height: "10%",
             }}
           >
-            <Button type="submit" variant="contained">Save</Button>
-            <Button onClick={() => setOpen(false)}>Close</Button>
+            <Button type="submit" variant="outlined">Save</Button>
+            <Button onClick={() => {
+              setFile(null);
+              formik.resetForm();
+              setOpen(false)}}>Close</Button>
           </Box>
         </Box>
       </Modal>
