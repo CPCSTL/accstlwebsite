@@ -52,7 +52,9 @@ const router = useRouter()
         gap:4,
     }} >
    {statements?.map((statement)=>(
-    <Card sx={{
+    <Card
+    key={statement._id}
+     sx={{
         //row flex
         display:"flex",
        flexWrap:"wrap",
