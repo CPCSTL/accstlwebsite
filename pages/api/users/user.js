@@ -8,7 +8,9 @@ const handler = nc();
 handler
 .use(chechSession)
 .get(async(req,res)=>{  
+    console.log(req.session, req.token , "__user at get api__");
 await connectToDb()
+
 try {
     const user = await findUserByEmail(req.token.email,{password:0})
     if(!user){

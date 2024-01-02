@@ -21,7 +21,7 @@ export const chechSession = async (req,res,next)=>{
    if(!session){
     return res.status(500).json({message:"you are not signed from session check"})
    }
-   console.log(session, "___session+++");
+   console.log(session,token, "___session and token +++");
    req.token = token
    req.session = session;
    
