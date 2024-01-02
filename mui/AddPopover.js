@@ -1,6 +1,7 @@
-import { AddCircleOutline } from '@mui/icons-material'
-import { Card,  Popover,  IconButton } from '@mui/material'
-import { Box } from '@mui/system'
+import Card from '@mui/material/Card';
+import Popover from '@mui/material/Popover';
+import IconButton from '@mui/material/IconButton';
+import Box from '@mui/material/Box';
 
 import React from 'react'
 

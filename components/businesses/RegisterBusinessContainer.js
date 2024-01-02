@@ -1,5 +1,9 @@
 import LayOutMain from '@layouts/layoutMain/LayOutMain'
-import { Box, Button, TextField, Typography } from '@mui/material'
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'

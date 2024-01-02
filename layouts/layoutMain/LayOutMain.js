@@ -8,7 +8,10 @@ import { showToast } from 'utils/functions';
 import { clearNotifications } from 'store/reducers/notifications.reducer';
 import { signOutUser } from 'store/reducers/user.reducer';
 import CheckSession from "db/utils/CheckSession";
-import { Avatar, Box, Button } from "@mui/material";
+import Avatar from '@mui/material/Avatar';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+
 
 
 

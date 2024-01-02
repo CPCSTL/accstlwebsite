@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Front from './Front'
-import { Box } from '@mui/material'
+import Box  from '@mui/material/Box'
 import { useFormik } from 'formik'
 import axios from 'axios'
 import refreshReducer from 'store/reducers/refresh.reducer'

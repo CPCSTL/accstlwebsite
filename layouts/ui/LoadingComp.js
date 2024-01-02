@@ -1,4 +1,5 @@
-import { CircularProgress } from '@mui/material'
+import CircularProgress from '@mui/material/CircularProgress';
+
 import mycss from 'mycss'
 import React from 'react'
 

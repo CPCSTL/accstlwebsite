@@ -1,4 +1,8 @@
-import { Box, Card, Chip, Typography } from '@mui/material'
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import Chip from '@mui/material/Chip';
+import Typography from '@mui/material/Typography';
+
 import moment from 'moment'
 import mycss from 'mycss'
 import { useRouter } from 'next/router'

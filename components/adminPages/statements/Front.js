@@ -1,5 +1,10 @@
-import { AddCircleOutline, Close, Delete, Edit, SearchOffOutlined } from '@mui/icons-material'
-import { Box, Button, Chip, IconButton, TextField, Typography } from '@mui/material'
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Chip from '@mui/material/Chip';
+import IconButton from '@mui/material/IconButton';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
+
 import ConfirmModal from 'mui/confirmModal'
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'

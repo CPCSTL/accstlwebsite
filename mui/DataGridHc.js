@@ -3,14 +3,11 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 
-import { DataGrid, GridPagination, GridToolbar, GridToolbarExport } from '@mui/x-data-grid';
-import {
-  randomCreatedDate,
-  randomTraderName,
-  randomUpdatedDate,
-} from '@mui/x-data-grid-generator';
-import { GridToolbarContainer } from '@mui/x-data-grid';
-import { LinearProgress } from '@mui/material';
+
+import DataGrid from '@mui/x-data-grid/DataGrid';
+import LinearProgress from '@mui/material/LinearProgress';
+
+
 
 
 export default function DataGridHc({data , CustomToolBar , loading, formik}) {

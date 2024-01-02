@@ -1,5 +1,10 @@
 import LoadingComp from '@layouts/ui/LoadingComp';
-import { Box, Button, InputAdornment, Modal, TextField } from '@mui/material'
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import InputAdornment from '@mui/material/InputAdornment';
+import Modal from '@mui/material/Modal';
+import TextField from '@mui/material/TextField';
+
 import axios from 'axios';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';

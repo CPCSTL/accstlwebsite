@@ -1,5 +1,8 @@
-import { Delete } from "@mui/icons-material";
-import { Box, Button, Modal } from "@mui/material";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Modal from '@mui/material/Modal';
+import Delete from '@mui/icons-material/Delete';
+
 import React from "react";
 import { useDispatch } from "react-redux";
 import Popover from '@mui/material/Popover';

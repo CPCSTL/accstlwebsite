@@ -1,8 +1,14 @@
 import React, { use, useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { Box, IconButton, Modal, Button, TextField, LinearProgress } from '@mui/material';
-import { AddCircleOutline } from '@mui/icons-material';
+import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
+import Modal from '@mui/material/Modal';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import LinearProgress from '@mui/material/LinearProgress';
+import AddCircleOutline from '@mui/icons-material/AddCircleOutline';
+
 import Image from 'next/image';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import axios from 'axios';

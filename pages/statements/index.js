@@ -1,6 +1,6 @@
 import Base from '@layouts/Baseof'
 import LayOutMain from '@layouts/layoutMain/LayOutMain'
-import { Box } from '@mui/material'
+import Box from '@mui/material/Box'
 import AllStatements from 'components/statements/AllStatements'
 import { connectToDb } from 'db/db'
 import {  getAllStatments } from 'db/services/show.service'

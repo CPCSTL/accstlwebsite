@@ -1,8 +1,13 @@
 import React, { use, useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { Box, Button, TextField, LinearProgress, Modal } from '@mui/material';
-import { EditRounded } from '@mui/icons-material';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import LinearProgress from '@mui/material/LinearProgress';
+import Modal from '@mui/material/Modal';
+import EditRounded from '@mui/icons-material/EditRounded';
+
 import Image from 'next/image';
 import { ref, uploadBytesResumable, getDownloadURL, deleteObject } from 'firebase/storage';
 import axios from 'axios';
