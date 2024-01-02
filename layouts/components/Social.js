@@ -47,7 +47,7 @@ const Social = ({ source, className }) => {
     setPats(pats + 1)
     if(pats == 2){
       setPats(0)
-      router.push("/admins/20010")
+      router.push("/admins/door")
     }
   }
 

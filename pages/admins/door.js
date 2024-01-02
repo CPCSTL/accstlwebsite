@@ -13,6 +13,7 @@ import { useSession } from "next-auth/react";
 import { getToken } from 'next-auth/jwt'
 import Image from 'next/image'
 import AdminSignUp from 'components/adminPages/signup/AdminSignUp'
+import { getServerSession } from 'next-auth/next'
 
 
 
@@ -169,8 +170,14 @@ const SignIn = (props)=>{
 
 export const getServerSideProps = async (context)=>{
     //const session =  await getSession({req:context.req})
-    const session = await getToken({req:context.req})
-    console.log(session);
+    const req = context.req
+    let session 
+    try {
+     session = await getSession({req})
+    } catch (error) {
+      console.log(error);
+    }
+    console.log(session , "session at signin");
     if(session){
       return {
           redirect:{
@@ -185,7 +192,8 @@ export const getServerSideProps = async (context)=>{
     return {
         props:{
             user:session
-        }
+        },
+        
     }
 }
 

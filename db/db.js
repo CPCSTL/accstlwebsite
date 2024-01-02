@@ -3,6 +3,7 @@ import { log } from 'console';
 import mongoose from 'mongoose'
 
 export const connectToDb = async ()=>{
+    console.log("connecting to db");
     const readyState =   mongoose.connection.readyState
     if (readyState === 0){
        try {
