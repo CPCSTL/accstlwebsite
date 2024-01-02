@@ -9,6 +9,7 @@ export const userExists = async(email) => {
 }; 
 
 export const findUserByEmail = async (email, select)=>{
+  console.log(email, "email at findUserByEmail");
     const user = await User.findOne({email:email})
     return user
 };

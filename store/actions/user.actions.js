@@ -77,7 +77,9 @@ export const autoSignIn = createAsyncThunk(
             return user.data
            
         } catch (error) {
+
             dispatch(errorGlobal(error.response.data.message))
+            return error
            
             // console.log("error",error.response.data.message);
            
