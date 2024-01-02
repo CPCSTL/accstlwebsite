@@ -9,10 +9,11 @@ handler
 .use(chechSession)
 .get(async(req,res)=>{  
     console.log(req.session, req.token , "__user at get api__");
-await connectToDb()
+    await connectToDb()
+    console.log(req.session, req.token , "__user at get api__");
 
 try {
-    const user = await findUserByEmail(req.token.email,{password:0})
+    const user = await findUserByEmail(req.session.user.email,{password:0})
     if(!user){
         return res.status(400).json({message:"no user found"})
     }
