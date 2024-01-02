@@ -1,5 +1,4 @@
 import config from "@config/config.json";
-import TwSizeIndicator from "@layouts/components/TwSizeIndicator";
 import { Head, Html, Main, NextScript } from "next/document";
 
 const Document = () => {
@@ -31,7 +30,7 @@ const Document = () => {
       </Head>
       <body>
         <Main />
-         <TwSizeIndicator /> 
+        {/* <TwSizeIndicator /> */}
         <NextScript />
       </body>
     </Html>
