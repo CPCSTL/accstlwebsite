@@ -12,6 +12,7 @@ import { getSession } from 'next-auth/react'
 import { useSession } from "next-auth/react";
 import { getToken } from 'next-auth/jwt'
 import Image from 'next/image'
+import AdminSignUp from 'components/adminPages/signup/AdminSignUp'
 
 
 
@@ -22,6 +23,7 @@ const SignIn = (props)=>{
   
 
     const [formType, setformType] = useState(true)
+    const [open, setOpen] = useState(false)
     const [loading, setLoading] = useState(false);
     const user = useSelector(state=>state.user)
     const router = useRouter()
@@ -64,12 +66,13 @@ const SignIn = (props)=>{
           flexWrap:"wrap",
           width:"100%",
           pt:"10%",
-          gap:"10px",
+          gap:3,
           marginLeft:"auto",
           marginRight:"auto",
         }}
         
         >
+       
        
       
        
@@ -78,6 +81,8 @@ const SignIn = (props)=>{
         component="form"
         sx={{
           "& .MuiTextField-root": { m: 1, width: "100%" },
+          
+          
         }}
         noValidate
         autoComplete="off"
@@ -102,7 +107,18 @@ const SignIn = (props)=>{
             {...errorHelper(formik,"password")}
 
         />
-       
+       <Box
+       sx={{
+          display:"flex",
+          flexDirection:"row",
+          justifyContent:"flex-start",
+          alignItems:"center",
+          width:"100%",
+          marginTop:"10px",
+        
+       }}
+       >
+      
         <Button 
         type="submit"
         variant="contained"
@@ -115,16 +131,22 @@ const SignIn = (props)=>{
          {formType ? "Sign in":"Register"}
         {user.loading ? <CircularProgress size={30} color='secondary' thickness={2} /> :""}
         </Button>
+        <AdminSignUp open={open} setOpen={setOpen} />
+        </Box>
 
       
 
         </Box>
         <Box sx={{
-          width:"50%",
+          width:{
+            md:"100%",
+            lg:"50%"
+          },
           height:"20%",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            justifyContent: "center",
            
           
         }} >

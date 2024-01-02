@@ -9,7 +9,7 @@ import { clearNotifications } from 'store/reducers/notifications.reducer';
 import { signOutUser } from 'store/reducers/user.reducer';
 import CheckSession from "db/utils/CheckSession";
 import { Avatar, Box, Button } from "@mui/material";
-import { set } from "mongoose";
+
 
 
 const LayOutMain = (props) => {
@@ -54,18 +54,20 @@ const LayOutMain = (props) => {
     {user && navOpen && user.data.role  === "admin"  ?
     <Box className="container" sx={{
         position:"fixed",
-        bottom:0,
-        left:0,
-        right:0,
+        bottom:"0",
+        
+       
+       
+       
         color:"red",
-        width:"100%",
-        height:"50px",
+        height:"60px",
         display:"flex",
         justifyContent:"center",
         alignItems:"center",
+       
 
         backgroundColor:"rgba(3,30,0,0.9)",
-        zIndex:1000,
+       
         cursor:"pointer",
         gap:1,
         color:"white",

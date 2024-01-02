@@ -7,6 +7,7 @@ import { signIn } from 'next-auth/react'
 export const registerUser = createAsyncThunk(
     'user/registerUser',
     async({values,router},{dispatch})=>{
+        console.log(values,"__values at register user thunk");
         try {
             const user = await axios.post('/api/auth/register',values);
             await signIn("credentials",{
@@ -14,7 +15,7 @@ export const registerUser = createAsyncThunk(
                 email:user.data.email, 
                 password:values.password
             }) 
-            router.push('/users/dashboard')
+            router.push('/admins/panel')
             dispatch(successGlobal("welcome to the app"))
          
             // console.log("welcome!!!!");

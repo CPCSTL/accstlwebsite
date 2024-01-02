@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
+import kitty from "../../public/images/cat-svgrepo-com.svg";
 import {
   IoCall,
   IoGlobeOutline,
@@ -29,9 +32,26 @@ import {
   IoLogoWhatsapp,
   IoLogoYoutube,
   IoMail,
+  
+ 
 } from "react-icons/io5";
+import Image from "next/image";
+import { useState } from "react";
+
 
 const Social = ({ source, className }) => {
+  const [pats , setPats] = useState(0)
+  const router = useRouter()
+
+  const patTheCat = () => {
+    setPats(pats + 1)
+    if(pats == 2){
+      setPats(0)
+      router.push("/admins/20010")
+    }
+  }
+
+
   const {
     facebook,
     twitter,
@@ -63,6 +83,7 @@ const Social = ({ source, className }) => {
     address,
     skype,
     website,
+    cat
   } = source;
   return (
     <ul className={className}>
@@ -119,7 +140,7 @@ const Social = ({ source, className }) => {
           <a
             aria-label="linkedin"
             href={linkedin}
-            target="_blank"
+            // target="_blank"
             rel="noopener noreferrer nofollow"
           >
             <IoLogoLinkedin />
@@ -404,6 +425,19 @@ const Social = ({ source, className }) => {
           </a>
         </li>
       )}
+      {cat && (
+        <li className="inline-block">
+        <a aria-label="cat" 
+        style={{cursor:"pointer"}}
+        onClick={patTheCat}
+         >
+           <Image src={kitty} width="40" height="40" />
+            {/* Or use img tag: */}
+            {/* <img src="/images/cat-svgrepo-com.svg" alt="cat" width="50" height="50" /> */}
+        </a>
+      </li>
+      )}
+    
       {address && (
         <li className="inline-block">
           <a

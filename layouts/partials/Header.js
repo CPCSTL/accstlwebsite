@@ -3,20 +3,11 @@ import config from "@config/config.json";
 import menu from "@config/menu.json";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from 'react-redux';
-import { showToast } from 'utils/functions';
-import { clearNotifications } from 'store/reducers/notifications.reducer';
-import { signOutUser } from 'store/reducers/user.reducer';
+import React, { useState } from "react";
 
 const Header = () => {
   //router
   const router = useRouter();
-
-  // redux
-  const dispatch = useDispatch()
-  const notifications = useSelector(state=>state.notifications)
-const user = useSelector(state=>state.user)
 
   // distructuring the main menu from menu object
   const { main } = menu;
@@ -27,26 +18,6 @@ const user = useSelector(state=>state.user)
   // logo source
   const { logo } = config.site;
   const { enable, label, link } = config.nav_button;
-
-  // useEffect
-  useEffect(() => {
- 
-    let {global} = notifications
-     
-    if(notifications && global.success){
-      const msg = global.msg ? global.msg : "Success"
-      showToast("SUCCESS", msg);
-      dispatch(clearNotifications())
-    }
-    if(notifications && global.error){
-      const msg = global.msg ? global.msg : "Error"
-      showToast("ERROR", msg)
-      dispatch(clearNotifications())
-    }
-    
-    
-    }, [notifications])
-
 
   return (
     <header className="header">
@@ -89,14 +60,14 @@ const user = useSelector(state=>state.user)
             {main.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>
                 {menu.hasChildren ? (
-                  <li className="nav-item nav-dropdown group relative">
-                    <span className="nav-link inline-flex items-center">
+                  <li className="nav-item nav-dropdown group ">
+                    <span className="nav-link inline-flex items-center ">
                       {menu.name}
                       <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
                     </span>
-                    <ul className="nav-dropdown-list hidden group-hover:block md:invisible md:absolute md:block md:opacity-0 md:group-hover:visible md:group-hover:opacity-100">
+                    <ul className="nav-dropdown-list hidden bg-green-200 group-hover:block md:invisible md:absolute top-11 pb-5 px-5 w-100%   z-100 md:block md:opacity-100:h-screen w-200 md:group-hover:visible md:group-hover:opacity-100">
                       {menu.children.map((child, i) => (
                         <li className="nav-dropdown-item" key={`children-${i}`}>
                           <Link

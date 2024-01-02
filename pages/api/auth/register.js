@@ -4,7 +4,7 @@ import User from 'db/models/user.model'
 import { passwordHash } from "db/utils/tools"
 import { userExists } from 'db/services/user.service';
 
-const handler = async(req,res) => {
+  const handler = async(req,res) => {
     await connectToDb();
 
     if(req.method === 'POST'){

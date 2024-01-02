@@ -3,8 +3,10 @@ import config from "@config/config.json";
 import menu from "@config/menu.json";
 import social from "@config/social.json";
 import { markdownify } from "@lib/utils/textConverter";
+import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import cat from "../../public/images/cat-svgrepo-com.svg";
 
 const Footer = () => {
   const { copyright, footer_content } = config.params;
@@ -26,7 +28,9 @@ const Footer = () => {
                       </Link>
                     </li>
                   ))}
+                  
                 </ul>
+                
               </div>
             );
           })}
@@ -42,11 +46,17 @@ const Footer = () => {
             </Link>
             {markdownify(footer_content, "p", "mt-3 mb-6")}
             <Social source={social} className="social-icons mb-8" />
+           
+          
+         
           </div>
         </div>
         {/* copyright */}
         <div className="border-t border-border py-6">
           {markdownify(copyright, "p", "text-sm text-center")}
+          
+           
+          
         </div>
       </div>
     </footer>

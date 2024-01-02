@@ -6,7 +6,7 @@
     "logo": "/images/logo.png",
     "logo_width": "100",
     "logo_height": "48",
-    "logo_text": "Bigspring Light"
+    "logo_text": "Arab Culture Center"
   },
 
   "settings": {
@@ -17,8 +17,8 @@
 
   "nav_button": {
     "enable": true,
-    "label": "Get Started",
-    "link": "/contact"
+    "label": "Donation",
+    "link": "https://checkout.stripe.com/c/pay/cs_live_a1dnBfyh1F92p1Qf7UU0zIaMJqn66MPmOD893YCrkJYExx2IjJ6JU33Pcw#fidkdWxOYHwnPyd1blppbHNgWjA0S0lHPXBAPXVAUzZRPFB9TXdyQW0yblc8TVJmXFZhbUZtfW1ccUNBTWRhVXN9NEFfMzBBbWRVVTxkMkszY3NETlI8bm5qSHx2czFgVDcyQXM1ak5VRHBgNTVpS05JTnFUTicpJ3VpbGtuQH11anZgYUxhJz8nPERUMW9QMGpNYFRyZnNwZEBAJyknd2BjYHd3YHdKd2xibGsnPydtcXF1dj8qKmRmZnZxaStqd2IqJ3gl"
   },
 
   "params": {
@@ -31,6 +31,6 @@
   "metadata": {
     "meta_author": "Arab culture center , events and activities",
     "meta_image": "",
-    "meta_description": "A SAAS template for nextjs"
+    "meta_description": "Arab Culture Center , events and activities"
   }
 }

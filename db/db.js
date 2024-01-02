@@ -6,7 +6,7 @@ export const connectToDb = async ()=>{
     const readyState =   mongoose.connection.readyState
     if (readyState === 0){
        try {
-        const connect = await   mongoose.connect(`mongodb+srv://momoland:12341234@cluster0.lkpz4rs.mongodb.net/smellycats?retryWrites=true&w=majority`)
+        const connect = await   mongoose.connect(`${process.env.MONGO_URI}`)
         console.log('connected successfuly');
         return connect
        } catch (error) {

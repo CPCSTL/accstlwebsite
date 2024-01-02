@@ -2,7 +2,24 @@
   "main": [
     {
       "name": "Home",
-      "url": "/"
+      "url": "/",
+      "hasChildren":true,
+      "children":[
+        {
+          "name":"about them",
+          "url":"/statements"
+        },
+        {
+          "name":"about us",
+          "url":"/statements"
+        },
+        {
+          "name":"ta3ala",
+          "url":"/statements"
+        }
+      ]
+      
+
     },
     {
       "name": "Statements",
@@ -23,7 +40,34 @@
     },
     {
       "name": "FAQ",
-      "url": "/faq"
+      "url": "/faq",
+      "hasChildren":true,
+      "children":[
+        {
+          "name":"about us",
+          "url":"/statements"
+        },
+        {
+          "name":"about us",
+          "url":"/statements"
+        },
+        {
+          "name":"never mind",
+          "url":"/statements"
+        },
+        {
+          "name":"about us",
+          "url":"/statements"
+        },
+        {
+          "name":"about us",
+          "url":"/statements"
+        },
+        {
+          "name":"about us",
+          "url":"/statements"
+        }
+      ]
     }
   ],
   "footer": [

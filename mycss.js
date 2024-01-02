@@ -19,6 +19,8 @@ const  mycss = {
         red1:"#FF0000",
         virginlust:"#e4181e",
 
+        accstlGreen:"#00693E"
+
 
     }
 }
