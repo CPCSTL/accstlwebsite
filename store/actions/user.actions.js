@@ -55,6 +55,7 @@ export const signInUser = createAsyncThunk(
             return user.data
            
         } catch (error) {
+            console.log(error,"error at thunk");
             dispatch(errorGlobal(error.response.data.message, "error signing in second"))
            
             // console.log("error",error.response.data.message);
@@ -77,7 +78,7 @@ export const autoSignIn = createAsyncThunk(
             return user.data
            
         } catch (error) {
-
+          console.log(error,"error at autoSignIn");
             dispatch(errorGlobal(error.response.data.message))
             return error
            
