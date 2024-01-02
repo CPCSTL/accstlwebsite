@@ -20,9 +20,7 @@ import { getServerSession } from 'next-auth/next'
 
 
 const SignIn = (props)=>{
-    if (props.user) {
-        console.log(props.user);
-    }
+ console.log(props.starter, "starter at signin");
   
 
     const [formType, setformType] = useState(true)
@@ -170,10 +168,13 @@ const SignIn = (props)=>{
     )
 };
 
+
+
+export default SignIn
 export const getServerSideProps = async (context)=>{
     //const session =  await getSession({req:context.req})
-    const req = context.req
-    let session 
+    // const req = context.req
+    // let session 
   //   try {
   //    session = await getSession({req})
   //   } catch (error) {
@@ -193,11 +194,8 @@ export const getServerSideProps = async (context)=>{
   // }
     return {
         props:{
-            user:{}
+            starter:{adam:"adam miller"}
         }
         
     }
 }
-
-
-export default SignIn
