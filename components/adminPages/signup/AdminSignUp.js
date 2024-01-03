@@ -140,7 +140,7 @@ const formik = useFormik({
         label='First name'
         InputProps={{
             endAdornment: (
-              <InputAdornment sx={{bgcolor:"white"}}>
+              <InputAdornment position='end' sx={{bgcolor:"white"}}>
                 <AccountCircle  />
               </InputAdornment>
             ),
