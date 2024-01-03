@@ -1,7 +1,7 @@
-
+import LoadingComp from '@layouts/ui/LoadingComp';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-
+import InputAdornment from '@mui/material/InputAdornment';
 import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
 
@@ -15,7 +15,7 @@ import { useDispatch } from 'react-redux';
 import { registerUser } from 'store/actions/user.actions';
 import { errorGlobal } from 'store/reducers/notifications.reducer';
 import { errorHelper } from 'utils/functions';
-import { AccountCircle, AppRegistration, EmailOutlined, PasswordOutlined } from '@mui/icons-material';
+
 import { useRouter } from 'next/router';
 
 const AdminSignUp = (props) => {
@@ -104,7 +104,7 @@ const formik = useFormik({
         
         
      }}>
-    
+     {loading && <LoadingComp />}
         <Box sx={{
             display:"flex",
            flexWrap:"wrap",
@@ -139,11 +139,11 @@ const formik = useFormik({
         size='small'
         label='First name'
         InputProps={{
-            // endAdornment: (
-            //   <InputAdornment position='end' sx={{bgcolor:"white"}}>
-            //     <AccountCircle  />
-            //   </InputAdornment>
-            // ),
+            endAdornment: (
+              <InputAdornment position='end' sx={{bgcolor:"white"}}>
+              
+              </InputAdornment>
+            ),
           }}
         {...formik.getFieldProps("firstName")}
         {...errorHelper(formik,"firstName")}
@@ -174,11 +174,11 @@ const formik = useFormik({
         label='Last name'
         color="success"
         InputProps={{
-            // endAdornment: (
-            //   <InputAdornment position="start">
-            //     <AccountCircle />
-            //   </InputAdornment>
-            // ),
+            endAdornment: (
+              <InputAdornment position="start">
+               
+              </InputAdornment>
+            ),
           }}
         {...formik.getFieldProps("lastName")}
         {...errorHelper(formik,"lastName")}
@@ -197,11 +197,11 @@ const formik = useFormik({
             {...errorHelper(formik,"email")}
            
             InputProps={{
-                // startAdornment: (
-                //   <InputAdornment position="start">
-                //     <EmailOutlined />
-                //   </InputAdornment>
-                // ),
+                startAdornment: (
+                  <InputAdornment position="start">
+                   
+                  </InputAdornment>
+                ),
               }}
               sx={{width:{
                 xs:"100%",
@@ -217,11 +217,11 @@ const formik = useFormik({
             {...errorHelper(formik,"registrationNumber")}
            
             InputProps={{
-                // startAdornment: (
-                //   <InputAdornment position="start">
+                startAdornment: (
+                  <InputAdornment position="start">
                     
-                //   </InputAdornment>
-                // ),
+                  </InputAdornment>
+                ),
               }}
               sx={{width:{
                 xs:"100%",
@@ -239,11 +239,11 @@ const formik = useFormik({
             {...errorHelper(formik,"password")}
            
             InputProps={{
-                // startAdornment: (
-                //   <InputAdornment position="start">
+                startAdornment: (
+                  <InputAdornment position="start">
                     
-                //   </InputAdornment>
-                // ),
+                  </InputAdornment>
+                ),
               }}
               sx={{width:{
                 xs:"100%",
@@ -258,11 +258,11 @@ const formik = useFormik({
             label='confirm your password'
             type='password'
             InputProps={{
-                // startAdornment: (
-                //   <InputAdornment position="start" sx={{width:"0px"}}>
+                startAdornment: (
+                  <InputAdornment position="start" sx={{width:"0px"}}>
                     
-                //   </InputAdornment>
-                // ),
+                  </InputAdornment>
+                ),
               }}
             {...formik.getFieldProps("confirmPassword")}
             {...errorHelper(formik,"confirmPassword")}
