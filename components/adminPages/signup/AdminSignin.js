@@ -20,7 +20,7 @@ import { getServerSession } from 'next-auth/next'
 
 
 const SignIn = (props)=>{
- console.log(props.starter, "starter at signin");
+
   
 
     const [formType, setformType] = useState(true)
@@ -61,109 +61,7 @@ const SignIn = (props)=>{
 
     return (
         <div className="container full_vh small top-space ">
-        <Box 
-        sx={{
-          display:"flex",
-          flexWrap:"wrap",
-          width:"100%",
-          pt:"10%",
-          gap:3,
-          marginLeft:"auto",
-          marginRight:"auto",
-        }}
-        
-        >
-       
-       
-      
-       
-        
-        <Box
-        component="form"
-        sx={{
-          "& .MuiTextField-root": { m: 1, width: "100%" },
-          
-          
-        }}
-        noValidate
-        autoComplete="off"
-        onSubmit={formik.handleSubmit}
-        >
-        <h1>{formType ? "Sign in":"Register"}</h1>
-        <TextField 
-            name="email"
-            variant='outlined'
-            label='enter your email'
-            {...formik.getFieldProps("email")}
-            {...errorHelper(formik,"email")}
-
-        />
-        <TextField 
-            name="password"
-            variant='outlined'
-            label='enter your password'
-            type='password'
-        
-            {...formik.getFieldProps("password")}
-            {...errorHelper(formik,"password")}
-
-        />
-       <Box
-       sx={{
-          display:"flex",
-          flexDirection:"row",
-          justifyContent:"flex-start",
-          alignItems:"center",
-          width:"100%",
-          marginTop:"10px",
-        
-       }}
-       >
-      
-        <Button 
-        type="submit"
-        variant="contained"
-        color='primary'
-        size="small"
-        className='me-2'
-        disabled={user.loading ? true : false}
-        style={{backgroundColor:"green"}}
-         >
-         {formType ? "Sign in":"Register"}
-        {user.loading ? <CircularProgress size={30} color='secondary' thickness={2} /> :""}
-        </Button>
-        <AdminSignUp open={open} setOpen={setOpen} />
-        </Box>
-
-      
-
-        </Box>
-        <Box sx={{
-          width:{
-            md:"100%",
-            lg:"50%"
-          },
-          height:"20%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-           
-          
-        }} >
-        <Image src="/images/logo.png" alt="logo" width={100} height={100} />
-        <p style={{width:"80%"}} className="text-center">
-      This section of the site is restricted to authorized administrative personnel only. Unauthorized access is strictly prohibited.</p>
-      <Button 
-      variant='contained'
-      onClick={()=>router.push("/")}
-      style={{
-        backgroundColor :"red",
-      }}
-      
-      >Go To HOME PAGE</Button>
-        </Box>
-        </Box>
+       hello
         </div>
     )
 };
@@ -171,3 +69,109 @@ const SignIn = (props)=>{
 
 
 export default SignIn
+
+
+// <Box 
+// sx={{
+//   display:"flex",
+//   flexWrap:"wrap",
+//   width:"100%",
+//   pt:"10%",
+//   gap:3,
+//   marginLeft:"auto",
+//   marginRight:"auto",
+// }}
+
+// >
+
+
+
+
+
+// <Box
+// component="form"
+// sx={{
+//   "& .MuiTextField-root": { m: 1, width: "100%" },
+  
+  
+// }}
+// noValidate
+// autoComplete="off"
+// onSubmit={formik.handleSubmit}
+// >
+// <h1>{formType ? "Sign in":"Register"}</h1>
+// <TextField 
+//     name="email"
+//     variant='outlined'
+//     label='enter your email'
+//     {...formik.getFieldProps("email")}
+//     {...errorHelper(formik,"email")}
+
+// />
+// <TextField 
+//     name="password"
+//     variant='outlined'
+//     label='enter your password'
+//     type='password'
+
+//     {...formik.getFieldProps("password")}
+//     {...errorHelper(formik,"password")}
+
+// />
+// <Box
+// sx={{
+//   display:"flex",
+//   flexDirection:"row",
+//   justifyContent:"flex-start",
+//   alignItems:"center",
+//   width:"100%",
+//   marginTop:"10px",
+
+// }}
+// >
+
+// <Button 
+// type="submit"
+// variant="contained"
+// color='primary'
+// size="small"
+// className='me-2'
+// disabled={user.loading ? true : false}
+// style={{backgroundColor:"green"}}
+//  >
+//  {formType ? "Sign in":"Register"}
+// {user.loading ? <CircularProgress size={30} color='secondary' thickness={2} /> :""}
+// </Button>
+
+// </Box>
+
+
+
+// </Box>
+// <Box sx={{
+//   width:{
+//     md:"100%",
+//     lg:"50%"
+//   },
+//   height:"20%",
+//     display: "flex",
+//     flexDirection: "column",
+//     alignItems: "center",
+//     justifyContent: "center",
+   
+  
+// }} >
+// <Image src="/images/logo.png" alt="logo" width={100} height={100} />
+// <p style={{width:"80%"}} className="text-center">
+// This section of the site is restricted to authorized administrative personnel only. Unauthorized access is strictly prohibited.</p>
+// <Button 
+// variant='contained'
+// onClick={()=>router.push("/")}
+// style={{
+// backgroundColor :"red",
+// }}
+
+// >Go To HOME PAGE</Button>
+// </Box>
+// </Box>
+
