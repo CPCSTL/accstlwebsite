@@ -13,7 +13,7 @@ import { registerUser,signInUser } from 'store/actions/user.actions'
 
 
 import Image from 'next/image'
-
+import AdminSignUp from './AdminSignUp';
 
 
 
