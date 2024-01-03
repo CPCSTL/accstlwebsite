@@ -1,6 +1,6 @@
 
-import  React ,{ useState } from 'react'
 import  {useFormik} from 'formik'
+import { useState } from 'react'
 import { errorHelper } from 'utils/functions'
 import { Loader } from 'utils/loader'
 import * as yup from 'yup'
@@ -10,7 +10,7 @@ import { registerUser,signInUser } from 'store/actions/user.actions'
 
 
 import Image from 'next/image'
-
+import AdminSignUp from 'components/adminPages/signup/AdminSignUp'
 
 
 
