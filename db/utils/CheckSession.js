@@ -19,7 +19,14 @@ const CheckSession = props => {
                 setLoading(false)
             }
         })
-        .catch(err=>setLoading(false))
+        .catch(
+            err=>{
+                console.log(err,"error at checkSession");
+                setLoading(false)
+                
+
+            }
+        )
        
     },[])
 

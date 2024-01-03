@@ -7,8 +7,9 @@ import {  getAllStatments } from 'db/services/show.service'
 import React from 'react'
 import { toJson } from 'utils/functions'
 
-const index = ({statements}) => {
+const index = ({statements, testing}) => {
     console.log(statements,"__statements");
+    console.log(testing,"__testing at statments");
   return (
    <Base>
     <Box>
@@ -35,7 +36,9 @@ export const getServerSideProps = async (context) => {
     try {
         const statements = await getAllStatments('_id', 'desc', 20, 0);
         console.log(statements,"__statements at index");
-        return { props: { statements: toJson(statements) } };
+        return { props: { statements: toJson(statements),
+        testing:"testing"
+        } };
     } catch (error) {
         return { props: { statements: [] } };
     }
