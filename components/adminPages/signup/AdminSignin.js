@@ -10,12 +10,11 @@ import * as yup from 'yup'
 import  {useRouter} from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 import { registerUser,signInUser } from 'store/actions/user.actions'
-import { getSession } from 'next-auth/react'
-import { useSession } from "next-auth/react";
-import { getToken } from 'next-auth/jwt'
+
+
 import Image from 'next/image'
 import AdminSignUp from 'components/adminPages/signup/AdminSignUp'
-import { getServerSession } from 'next-auth/next'
+
 
 
 
