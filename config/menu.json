@@ -2,22 +2,8 @@
   "main": [
     {
       "name": "Home",
-      "url": "/",
-      "hasChildren":true,
-      "children":[
-        {
-          "name":"about them",
-          "url":"/statements"
-        },
-        {
-          "name":"about us",
-          "url":"/statements"
-        },
-        {
-          "name":"ta3ala",
-          "url":"/statements"
-        }
-      ]
+      "url": "/"
+    
       
 
     },
@@ -25,50 +11,36 @@
       "name": "Statements",
       "url": "/statements"
     },
-    {
-      "name": "Blog",
-      "url": "/blogs"
-    },
    
-    {
-      "name": "Contact",
-      "url": "/contact"
-    },
+  
     {
       "name": "Business",
       "url": "/business/display"
     },
     {
-      "name": "FAQ",
-      "url": "/faq",
+      "name": "About Us",
+      "url": "/blogs",
       "hasChildren":true,
       "children":[
         {
           "name":"about us",
-          "url":"/statements"
+          "url":"/about"
         },
         {
-          "name":"about us",
-          "url":"/statements"
+          "name":"Board of Directors",
+          "url":"/board"
         },
         {
-          "name":"never mind",
-          "url":"/statements"
+          "name":"Contact Us",
+          "url":"/contact"
         },
         {
-          "name":"about us",
-          "url":"/statements"
-        },
-        {
-          "name":"about us",
-          "url":"/statements"
-        },
-        {
-          "name":"about us",
-          "url":"/statements"
+          "name":"FAQ",
+          "url":"/faq"
         }
       ]
     }
+   
   ],
   "footer": [
     {

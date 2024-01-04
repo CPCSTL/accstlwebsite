@@ -30,7 +30,7 @@ export const getStaticProps = async () => {
                 statements: toJson(statements),
                 testing: "testing"
             },
-            revalidate: 60 * 60 * 24, // Revalidate every 24 hours
+            revalidate: 60 * 60 * 6, // Revalidate every 24 hours
         };
     } catch (error) {
         return { props: { statements: [] } };
