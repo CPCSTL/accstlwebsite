@@ -123,19 +123,7 @@ const index = () => {
                         {/* ... other directors */}
 
 
-                    <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
-                        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                          <img src="https://accstl.org/assets/img/team/team-4.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
-                            <div className="p-4">
-                             <h4 className="text-lg font-semibold">Abdelmeguid Elghrabawi</h4>
-                             <div className="flex justify-center mt-3">
-                             <a href="#" className="text-blue-600 hover:text-blue-800">
-                             <i className="bi bi-linkedin"></i>
-                             </a>
-                          </div>
-                         </div>
-                        </div>
-                     </div> 
+                 
                         {/* ... other directors */}
                     <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -264,19 +252,7 @@ const index = () => {
                         </div>
                      </div> 
                         {/* ... other directors */}
-                    <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
-                        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                          <img src="https://accstl.org/assets/img/team/team-18.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
-                            <div className="p-4">
-                             <h4 className="text-lg font-semibold">Dalia Alshawi</h4>
-                             <div className="flex justify-center mt-3">
-                             <a href="#" className="text-blue-600 hover:text-blue-800">
-                             <i className="bi bi-linkedin"></i>
-                             </a>
-                          </div>
-                         </div>
-                        </div>
-                     </div> 
+                 
                         {/* ... other directors */}
                     <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden">
