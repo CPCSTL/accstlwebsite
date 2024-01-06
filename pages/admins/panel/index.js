@@ -1,12 +1,15 @@
 import AdminLayout from '@layouts/adminComps/Layout'
 import Box from '@mui/material/Box';
+import { useRouter } from 'next/router';
 
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { signOutUser } from 'store/reducers/user.reducer';
 
 
 const index = () => {
-    // const dispatch = useDispatch()
-    // const router = useRouter()
+    const dispatch = useDispatch()
+    const router = useRouter()
 
   return (
     <AdminLayout>
@@ -19,8 +22,8 @@ const index = () => {
     
     onClick={
         ()=>{
-    //  dispatch(signOutUser())
-    // router.push('/')
+     dispatch(signOutUser())
+    router.push('/')
          
  }
      } >

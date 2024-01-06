@@ -11,18 +11,6 @@ const SignInPage = (props) => {
   )
 }
 
-export const getServerSideProps = async ()=> {
-  const string = {
-    starter:"starter"
-  }
 
-  return {
-    props:{
-      starter:toJson(string)
-    }
-   
-  };
-    
-}
 
 export default SignInPage

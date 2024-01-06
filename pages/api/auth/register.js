@@ -8,7 +8,7 @@ import { userExists } from 'db/services/user.service';
     await connectToDb();
 
     if(req.method === 'POST'){
-        const {email, password} = req.body;
+        const {email, password, firstName, lastName, role} = req.body;
       
         /// check if exists
         if(await userExists(email)){
@@ -23,7 +23,10 @@ import { userExists } from 'db/services/user.service';
         try{
             const user = new User({
                 email,
-                password:hashedPass
+                password:hashedPass,
+                firstname:firstName,
+                lastname:lastName,
+                role
             });
             await user.save();
             res.status(200).json({

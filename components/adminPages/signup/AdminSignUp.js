@@ -13,7 +13,7 @@ import mycss from 'mycss';
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import { registerUser } from 'store/actions/user.actions';
-import { errorGlobal } from 'store/reducers/notifications.reducer';
+import { errorGlobal, successGlobal } from 'store/reducers/notifications.reducer';
 import { errorHelper } from 'utils/functions';
 
 import { useRouter } from 'next/router';
@@ -36,7 +36,8 @@ const formik = useFormik({
         email: '',
         password: '',
         confirmPassword: '',
-        registrationNumber: '',
+       
+        role: 'admin',
     },
     validationSchema: Yup.object({
         email: Yup.string().email('Invalid email address').required('Email is required'),
@@ -46,7 +47,7 @@ const formik = useFormik({
             .required('Confirm Password is required'),
         firstName: Yup.string().required('First Name is required').max(50, 'Max 50 characters'),
         lastName: Yup.string().required('Last Name is required').max(50, 'Max 50 characters'),
-        registrationNumber: Yup.string().required('Registration Number is required').max(5, 'Max 5 characters')
+        
     }),
     onSubmit: async (values, { resetForm }) => {
         setLoading(true);
@@ -205,27 +206,7 @@ const formik = useFormik({
               }}
               sx={{width:{
                 xs:"100%",
-                lg:"40%"
-            
-            }, m:0}}
-            />
-        <TextField
-            name="registrationNumber"
-            variant='outlined'
-            label='enter your registration number'
-            {...formik.getFieldProps("registrationNumber")}
-            {...errorHelper(formik,"registrationNumber")}
-           
-            InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    
-                  </InputAdornment>
-                ),
-              }}
-              sx={{width:{
-                xs:"100%",
-                lg:"40%"
+                lg:"80%"
             
             }, m:0}}
             />

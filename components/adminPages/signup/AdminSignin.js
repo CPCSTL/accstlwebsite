@@ -3,7 +3,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box'
 import  {useFormik} from 'formik'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { errorHelper } from 'utils/functions'
 import { Loader } from 'utils/loader'
 import * as yup from 'yup'
@@ -20,15 +20,21 @@ import { getServerSession } from 'next-auth/next'
 
 
 const SignIn = (props)=>{
- console.log(props.starter, "starter at signin");
+
   
 
     const [formType, setformType] = useState(true)
     const [open, setOpen] = useState(false)
     const [loading, setLoading] = useState(false);
-    const user = useSelector(state=>state.user)
+    const [alreadyLoggedIn, setAlreadyLoggedIn] = useState(false)
+    
+    
     const router = useRouter()
+    
+    // redux
+    const user = useSelector(state=>state.user)
     const dispatch = useDispatch()
+    
      
 
     const formik = useFormik({
@@ -59,8 +65,75 @@ const SignIn = (props)=>{
         setformType(!formType)
     }
 
+    useEffect(() => {
+        if(user.data && user.data.role === "admin"){
+            setAlreadyLoggedIn(true)
+
+        }
+      
+    }
+   
+    , [user.data])
+
     return (
-        <div className="container full_vh small top-space ">
+        <div style={{position:"relativ"}} className="container full_vh small top-space ">
+        {
+            alreadyLoggedIn ? 
+            <Box sx={{
+                position:"absolute",
+                top:"50%",
+                left:"50%",
+                transform:"translate(-50%,-50%)",
+                width:"100%",
+                height:"100%",
+                display:"flex",
+                flexDirection:"column",
+                justifyContent:"center",
+                alignItems:"center",
+                backgroundColor:"rgba(0,0,0,0.7)",
+                zIndex:1000,
+                gap:3
+            
+            }} >
+            <Box
+            sx={{
+              bgcolor:"black",
+              color:"white",
+              width:"50%",
+              height:"50%",
+              display:"flex",
+              flexDirection:"column",
+              justifyContent:"space-evenly",
+              alignItems:"center",
+            }}
+            >
+            
+            <h5 style={{color:"white"}}>You are already logged in <p>{user.data.email}</p></h5>
+
+            <Button
+            variant="outlined"
+           sx={{
+            color:"white",
+            borderColor:"white",
+           }}
+            onClick={()=>router.push("/admins/panel")}
+            >Go to admin panel</Button>
+            <Button 
+            sx={{
+              color:"white",
+              border:"2px solid white",
+             }}
+            >
+            <a href="/api/auth/signout">Sign out</a>
+            
+            </Button>
+            </Box>
+
+            </Box>
+            
+            : ""
+        }
+        
         <Box 
         sx={{
           display:"flex",
