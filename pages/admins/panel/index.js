@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import { signOutUser } from 'store/reducers/user.reducer';
 
 
-const index = () => {
+const Index = () => {
     const dispatch = useDispatch()
     const router = useRouter()
 
@@ -35,4 +35,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
