@@ -201,6 +201,7 @@ const SignIn = (props)=>{
           alignItems:"center",
           width:"100%",
           marginTop:"10px",
+          gap:2
         
        }}
        >

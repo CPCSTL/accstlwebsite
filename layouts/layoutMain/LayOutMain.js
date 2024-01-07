@@ -25,7 +25,7 @@ const LayOutMain = (props) => {
     // redux
     const dispatch = useDispatch()
     const notifications = useSelector(state=>state.notifications)
-  const user = useSelector(state=>state.user)
+    const user = useSelector(state=>state.user)
 
     useEffect(() => {
         //check if path  includes admin
@@ -88,7 +88,7 @@ const LayOutMain = (props) => {
     } }
     >
     <p>Let's go to admin page</p>
-<Avatar src={`https://robohash.org/${user.data.email}?set=set4&size=60x60`} />
+
 <p>{user.data.email}</p>
 
     </Box> : ""

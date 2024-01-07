@@ -425,18 +425,7 @@ const Social = ({ source, className }) => {
           </a>
         </li>
       )}
-      {cat && (
-        <li className="inline-block">
-        <a aria-label="cat" 
-        style={{cursor:"pointer"}}
-        onClick={patTheCat}
-         >
-           <Image src={kitty} width="40" height="40" />
-            {/* Or use img tag: */}
-            {/* <img src="/images/cat-svgrepo-com.svg" alt="cat" width="50" height="50" /> */}
-        </a>
-      </li>
-      )}
+  
     
       {address && (
         <li className="inline-block">

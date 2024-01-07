@@ -273,6 +273,8 @@ const formik = useFormik({
             sx={{
                 width:"50%",
                 color:mycss.colors.accstlGreen,
+                bgcolor:"success",
+                border:"2px solid green"
             
             }}
             onClick={
@@ -288,7 +290,7 @@ const formik = useFormik({
             </Button>
             <Button
             variant="outlined"
-            color='secondary'
+            color='primary'
             size="small"
             className='me-2'
             onClick={
