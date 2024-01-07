@@ -58,6 +58,9 @@ const LayOutMain = (props) => {
     <Box className="container" sx={{
         position:"fixed",
         bottom:"0",
+       
+        left:"0",
+        right:"0",
         
        
        
@@ -74,7 +77,8 @@ const LayOutMain = (props) => {
         cursor:"pointer",
         gap:1,
         color:"white",
-        borderRadius:"13px 13px 0 0"
+        borderRadius:"13px 13px 0 0",
+        zIndex:1000,
     
     }} 
     onClick={
