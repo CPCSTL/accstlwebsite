@@ -101,7 +101,10 @@ const SignIn = (props)=>{
             sx={{
               bgcolor:"black",
               color:"white",
-              width:"50%",
+              width:{
+                sm:"80%",
+                lg:"50%"
+              },
               height:"50%",
               display:"flex",
               flexDirection:"column",
