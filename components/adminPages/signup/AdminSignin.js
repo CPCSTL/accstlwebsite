@@ -102,7 +102,9 @@ const SignIn = (props)=>{
               bgcolor:"black",
               color:"white",
               width:{
-                sm:"80%",
+                xs:"100%",
+                sm:"100%",
+                md:"80%",
                 lg:"50%"
               },
               height:"50%",
