@@ -120,19 +120,20 @@ const SignIn = (props)=>{
            }}
             onClick={()=>router.push("/admins/panel")}
             >Go to admin panel</Button>
-            <Button 
-            sx={{
-              color:"white",
-              border:"2px solid white",
-             }}
+            <div
+           className='btn btn-primary cursor-pointer'
              onClick={
-              ()=>dispatch(signOutUser())
+              ()=>{
+                
+                dispatch(signOutUser())
+                router.push('/')
+              }
 
              }
             >
-           
+           sign-out
             
-            </Button>
+            </div>
             </Box>
 
             </Box>
