@@ -1,3 +1,5 @@
+import Base from '@layouts/Baseof';
+import { Box } from '@mui/material';
 import SignIn from 'components/adminPages/signup/AdminSignin'
 import React from 'react'
 import { toJson } from 'utils/functions';
@@ -5,9 +7,14 @@ import { toJson } from 'utils/functions';
 const SignInPage = (props) => {
   console.log(props.starter,"starter at index");
   return (
-    <div>
+    <Base>
+    <Box sx={{
+      pb:20,
+      pt:5
+    }}>
     <SignIn />
-    </div>
+    </Box>
+    </Base>
   )
 }
 
