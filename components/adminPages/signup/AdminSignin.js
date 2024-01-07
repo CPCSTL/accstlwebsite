@@ -126,7 +126,7 @@ const SignIn = (props)=>{
               border:"2px solid white",
              }}
              onClick={
-              ()=dispatch(signOutUser())
+              ()=>dispatch(signOutUser())
 
              }
             >
