@@ -16,6 +16,8 @@ import { getToken } from 'next-auth/jwt'
 import Image from 'next/image'
 import AdminSignUp from 'components/adminPages/signup/AdminSignUp'
 import { getServerSession } from 'next-auth/next'
+import Link from 'next/link';
+import { signOutUser } from 'store/reducers/user.reducer';
 
 
 
@@ -123,8 +125,12 @@ const SignIn = (props)=>{
               color:"white",
               border:"2px solid white",
              }}
+             onClick={
+              ()=dispatch(signOutUser())
+
+             }
             >
-            <a href="/api/auth/signout">Sign out</a>
+           
             
             </Button>
             </Box>
