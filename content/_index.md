@@ -1,6 +1,6 @@
 ---
 banner:
-  title: Welcome to Arab culture center
+  title: Welcome to Arab Culture Center
   content: a place where you can learn, experience, and appreciate the richness of Arabic culture.Our center is dedicated to promoting cross-cultural understanding and appreciation of the Arabic- speaking world, its history, language, traditions, and customs.
 
   image: "https://accstl.org/assets/img/acc-logo.png"
@@ -34,7 +34,7 @@ feature:
 
 # services
 services:
-  - title: "Arabic School"
+  - title: "ACC Arabic Language School"
     content: "ACC's Arabic School offers young children a vibrant introduction to the Arabic language. In our fun-filled sessions, kids engage with basic Arabic through interactive games, storytelling, and cultural activities. It's an exciting way to start their journey into a rich linguistic and cultural world."
     images:
       - "/images/school.png"
@@ -45,7 +45,7 @@ services:
       label: Get In Touch
       link: /contact
 
-  - title: "Driving Lessons"
+  - title: "Driving Classes"
     content: " ACC offers specialized driving lessons tailored for new immigrants, designed to help you navigate the roads confidently and safely. Our program covers essential driving skills, traffic laws, and practical tips tailored to your needs. With patient instructors and flexible scheduling, we aim to get you road-ready quickly and efficiently, ensuring a smooth transition to your new life."
     images: 
       - "/images/driving.png"
@@ -54,7 +54,7 @@ services:
       label: Show Interest
       link: /contact
   
-  - title: "Soccer coaching"
+  - title: "ACC United Soccer Academy"
     content: "ACC's Soccer Coaching program offers an energetic and supportive environment for kids to learn the fundamentals of soccer. Our experienced coaches focus on developing skills, teamwork, and sportsmanship, ensuring each child gets a chance to shine on the field. Perfect for budding soccer stars who want to have fun, make friends, and embrace the spirit of the game!"
     images:
       - "/images/soccer-1.png"
