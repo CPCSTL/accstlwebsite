@@ -35,8 +35,8 @@
           "url":"/contact"
         },
         {
-          "name":"FAQ",
-          "url":"/faq"
+          "name":"Terms Of Use",
+          "url":"/terms"
         }
       ]
     }
@@ -48,21 +48,37 @@
       "menu": [
         
         {
-          "text": "Quick Start",
+          "text": "Home",
           "url": "#"
         }
       ]
     },
     {
-      "name": "Product",
+      "name": "Services",
       "menu": [
         {
-          "text": "Features",
-          "url": "#"
+          "text": "Arabic School",
+          "url": "/comingsoon"
         },
         {
-          "text": "Platform",
-          "url": "#"
+          "text": "Driving School",
+          "url": "/comingsoon"
+        },
+        {
+          "text": "Children Soccer School",
+          "url": "/comingsoon"
+        },
+        {
+          "text": "Translation Services",
+          "url": "/comingsoon"
+        },
+        {
+          "text": "Business Services",
+          "url": "/business"
+        },
+        {
+          "text": "Technology Services",
+          "url": "/comingsoon"
         }
       ]
     },
@@ -70,16 +86,17 @@
       "name": "Support",
       "menu": [
         {
-          "text": "FAQ",
-          "url": "/faq"
+          "text": "Contact Us",
+          "url": "/contact"
         },
-        {
-          "text": "Privacy Policy",
-          "url": "#"
-        },
+       
         {
           "text": "Terms & Conditions",
           "url": "#"
+        },
+        {
+          "text": "About Us",
+          "url": "/about"
         }
       ]
     }

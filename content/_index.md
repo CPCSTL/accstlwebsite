@@ -34,46 +34,46 @@ feature:
 
 # services
 services:
-  - title: "task- come up with service number 1 for accstl"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Arabic School"
+    content: "ACC's Arabic School offers young children a vibrant introduction to the Arabic language. In our fun-filled sessions, kids engage with basic Arabic through interactive games, storytelling, and cultural activities. It's an exciting way to start their journey into a rich linguistic and cultural world."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/images/school.png"
+      # - "/images/service-slide-2.png"
+      # - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Check it out
+      label: Get In Touch
       link: /contact
 
-  - title: "come up with service # 2 fore accstl"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Driving Lessons"
+    content: " ACC offers specialized driving lessons tailored for new immigrants, designed to help you navigate the roads confidently and safely. Our program covers essential driving skills, traffic laws, and practical tips tailored to your needs. With patient instructors and flexible scheduling, we aim to get you road-ready quickly and efficiently, ensuring a smooth transition to your new life."
     images: 
-      - "/images/service-slide-1.png"
+      - "/images/driving.png"
     button:
       enable: true
-      label: Check it out
+      label: Show Interest
       link: /contact
   
-  - title: "come up with service # 3 for accstl"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Soccer coaching"
+    content: "ACC's Soccer Coaching program offers an energetic and supportive environment for kids to learn the fundamentals of soccer. Our experienced coaches focus on developing skills, teamwork, and sportsmanship, ensuring each child gets a chance to shine on the field. Perfect for budding soccer stars who want to have fun, make friends, and embrace the spirit of the game!"
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/images/soccer-1.png"
+      # - "/images/service-slide-2.png"
+      # - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Check it out
+      label: Show Interest
       link: /contact
 
-  - title: "come up with service # 4 for accstl"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Other Community Services"
+    content: "At ACC, we offer a diverse range of services designed to enrich and support our community. From language translation assistance to cultural workshops, health and wellness programs to job support services, we are committed to providing resources that cater to the unique needs of our community members. Our aim is to create a supportive and inclusive environment where everyone can access the help they need and feel connected to a thriving community network."
     images:
       - "/images/service-slide-1.png"
       - "/images/service-slide-2.png"
       - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Check it out
+      label: Show Interest
       link: /contact
 
 # workflow
@@ -85,7 +85,7 @@ workflow:
 # call_to_action
 call_to_action:
   title: "Ready to Participate?" 
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  content: Discover the array of activities and services ACC offers! From cultural events to language classes, there's something for everyone. Join our welcoming community and start your enriching journey with us today.
   image: '/images/cta.svg'
   button:
     enable: true
