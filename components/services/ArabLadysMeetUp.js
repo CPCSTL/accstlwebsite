@@ -20,7 +20,7 @@ const ArabLadysMeetUp = () => {
 
 
    }}>
-    <h3>Sign up for gathering at   <p style={{color:mycss.colors.accstlGreen}}>ACC Arab Lady's Meetup </p> </h3>
+   <h3>Sign up for gathering at <span style={{color: mycss.colors.accstlGreen}}>ACC Arab Lady&apos;s Meetup</span></h3>
 
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_tBx-ss7dboi6G6_LmaE1oytITW8aVhfaVKPS85sX3nYdYQ/viewform?embedded=true" width="100%" height="1536" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
    </Box>
