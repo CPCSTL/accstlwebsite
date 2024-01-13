@@ -43,7 +43,7 @@ services:
     button:
       enable: true
       label: Get In Touch
-      link: /contact
+      link: /school
 
   - title: "Driving Classes"
     content: " ACC offers specialized driving lessons tailored for new immigrants, designed to help you navigate the roads confidently and safely. Our program covers essential driving skills, traffic laws, and practical tips tailored to your needs. With patient instructors and flexible scheduling, we aim to get you road-ready quickly and efficiently, ensuring a smooth transition to your new life."
@@ -52,7 +52,7 @@ services:
     button:
       enable: true
       label: Show Interest
-      link: /contact
+      link: /drivingclasses
   
   - title: "ACC United Soccer Academy"
     content: "ACC's Soccer Coaching program offers an energetic and supportive environment for kids to learn the fundamentals of soccer. Our experienced coaches focus on developing skills, teamwork, and sportsmanship, ensuring each child gets a chance to shine on the field. Perfect for budding soccer stars who want to have fun, make friends, and embrace the spirit of the game!"
@@ -63,7 +63,7 @@ services:
     button:
       enable: true
       label: Show Interest
-      link: /contact
+      link: /soccer
 
   - title: "Other Community Services"
     content: "At ACC, we offer a diverse range of services designed to enrich and support our community. From language translation assistance to cultural workshops, health and wellness programs to job support services, we are committed to providing resources that cater to the unique needs of our community members. Our aim is to create a supportive and inclusive environment where everyone can access the help they need and feel connected to a thriving community network."
@@ -73,8 +73,8 @@ services:
       - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Show Interest
-      link: /contact
+      label: Check Services
+      link: /
 
 # workflow
 workflow: 

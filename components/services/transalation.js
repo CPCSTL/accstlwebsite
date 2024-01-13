@@ -23,7 +23,7 @@ const Translation = () => {
 
 
 
-   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqPAFgwX9P3Hr4tEeQnwTXFJOqQiDkbqlF9FMgWKOgLZ3pCw/viewform?embedded=true" width="100%" height="2044" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqPAFgwX9P3Hr4tEeQnwTXFJOqQiDkbqlF9FMgWKOgLZ3pCw/viewform?embedded=true" width="100%" height="2244" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
    
    </Box>
   )
