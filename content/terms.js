@@ -7,8 +7,23 @@ const Terms = () => {
         color:"#fff",
         backgroundColor:"#343541",
         padding:"2rem",
-        borderRadius:"1rem",
-        boxShadow:"0px 0px 3px 3px #000000",
+        borderRadius:{
+          xs:"0px",
+          sm:"5px",
+          md:"6px",
+          lg:"6px",
+          xl:"3px",
+        
+        },
+        px:{
+          xs:2,
+          sm:4,
+          md:4,
+          lg:8,
+        
+        },
+        
+       
         width:"100%",
         maxWidth:"100%",
         maxHeight:"100%",

@@ -8,7 +8,13 @@ const index = () => {
     <Base>
     <Box sx={{
         mt:8,
-        px:5,
+        px:{
+          xs:0,
+          sm:2,
+          md:4,
+          lg:8,
+        
+        },
     }}>
     <Terms />
     </Box>
