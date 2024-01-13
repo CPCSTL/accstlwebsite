@@ -1,11 +1,74 @@
 {
   "main": [
     {
-      "name": "Home",
-      "url": "/"
+      "name": "Community",
+      "url": "/blogs",
+      "hasChildren":true,
+      "children":[
+        {
+          "name":"Home",
+          "url":"/"
+
+        },
+        {
+          "name":"Volunteer",
+          "url":"/volunteer"
+        },
+        {
+          "name":"Arab Ladies Meetup",
+          "url":"/arabladysmeetup"
+        },
+        {
+          "name":"Share Your Ideas",
+          "url":"/shareideas"
+        }
+      ]
     
       
 
+    },
+    {
+      "name": "Services",
+      "url": "/blogs",
+      "hasChildren":true,
+      "children":[
+        {
+          "name":"Arabic School",
+          "url":"/school"
+        },
+        {
+          "name":"Driving Classes",
+          "url":"/drivingclasses"
+        },
+        {
+          "name":"Translation Services",
+          "url":"/translation"
+        },
+        {
+          "name":"Immigration Services",
+          "url":"/immigration"
+        },
+        {
+          "name":"ACC Soccer Team",
+          "url":"/soccer"
+        },
+        {
+          "name":"IT Services",
+          "url":"/itservices"
+        },
+        {
+          "name":"Economic Consulting",
+          "url":"/econsultation"
+        },
+        {
+          "name":"Reading Club",
+          "url":"/readingclub"
+        },
+        {
+          "name":"Employment Assistance",
+          "url":"/jobs"
+        }
+      ]
     },
     {
       "name": "Statements",
@@ -43,14 +106,27 @@
    
   ],
   "footer": [
+   
     {
-      "name": "Company",
+      "name": "Community",
       "menu": [
-        
         {
           "text": "Home",
           "url": "#"
+        },
+        {
+          "text": "Volunteer",
+          "url": "/volunteer"
+        },
+        {
+          "text": "Arab Women Meetup",
+          "url": "/arabladysmeetup"
+        },
+        {
+          "text": "Share Your Ideas",
+          "url": "/shareideas"
         }
+       
       ]
     },
     {
@@ -58,27 +134,31 @@
       "menu": [
         {
           "text": "Arabic School",
-          "url": "/comingsoon"
+          "url": "/school"
         },
         {
-          "text": "Driving School",
-          "url": "/comingsoon"
+          "text": "Driving Classes",
+          "url": "/drivingclasses"
         },
         {
-          "text": "Children Soccer School",
-          "url": "/comingsoon"
+          "text": "ACC United Soccer Team",
+          "url": "/soccer"
         },
         {
           "text": "Translation Services",
-          "url": "/comingsoon"
+          "url": "/translation"
         },
         {
-          "text": "Business Services",
-          "url": "/business"
+          "text": "Immigration Services",
+          "url": "/immigration"
+        },
+        {
+          "text": "Job Assistance",
+          "url": "/jobs"
         },
         {
           "text": "Technology Services",
-          "url": "/comingsoon"
+          "url": "/itservices"
         }
       ]
     },

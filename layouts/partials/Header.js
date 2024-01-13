@@ -67,7 +67,7 @@ const Header = () => {
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
                     </span>
-                    <ul className="nav-dropdown-list w-100 text-start hidden bg-zinc-100 pt-3 border-zinc-950 border-b-2  text-grey-550 group-hover:block md:invisible md:absolute top-11 pb-5 px-5 z-100 md:block md:opacity-100:h-screen w-200 md:group-hover:visible md:group-hover:opacity-100">
+                    <ul style={{color:"black"}} className="nav-dropdown-list w-100 text-start hidden bg-zinc-100 pt-3 border-zinc-950 border-b-2  text-grey-550 group-hover:block md:invisible md:absolute top-11 pb-5 px-5 z-100 md:block md:opacity-100:h-screen w-200 md:group-hover:visible md:group-hover:opacity-100">
                       {menu.children.map((child, i) => (
                         <li className="nav-dropdown-item" key={`children-${i}`}>
                           <Link
