@@ -56,7 +56,7 @@ const Header = () => {
             navOpen ? "max-h-[1000px]" : "max-h-0"
           }`}
         >
-          <ul className="navbar-nav block w-full md:flex md:w-auto lg:space-x-2">
+          <ul className="navbar-nav block w-full md:flex md:w-auto lg:space-x-1">
             {main.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>
                 {menu.hasChildren ? (
@@ -110,7 +110,7 @@ const Header = () => {
           </ul>
         </div>
         {enable && (
-          <div className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:ml-0 md:flex md:order-2">
+          <div className="d-flex order-1 ml-auto hidden min-w-[100px] items-center justify-end md:ml-0 md:flex md:order-2">
             <Link className="btn btn-primary z-0 py-[14px]" href={link} rel="" target="_blank">
               {label}
             </Link>
