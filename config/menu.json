@@ -1,108 +1,108 @@
 {
   "main": [
     {
-      "name": "Community",
+      "name": "HOME",
+      "url": "/"
+    },
+     {
+      "name": "AbOUT US",
       "url": "/blogs",
       "hasChildren":true,
       "children":[
         {
-          "name":"Home",
-          "url":"/"
-
+          "name":"ABOUT US",
+          "url":"/about"
         },
         {
-          "name":"Volunteer",
+          "name":"BOARD OF DIRECTORS",
+          "url":"/board"
+        },
+        {
+          "name":"CONTACT US",
+          "url":"/contact"
+        },
+        {
+          "name":"TERMS & CONDITIONS",
+          "url":"/terms"
+        }
+      ]
+    },
+    {
+      "name": "GET INVOLVED",
+      "url": "/blogs",
+      "hasChildren":true,
+      "children":[
+      
+        {
+          "name":"VOLUNTEER",
           "url":"/volunteer"
         },
         {
-          "name":"Arab Ladies Meetup",
+          "name":"ARAB LADIES MEETUP",
           "url":"/arabladysmeetup"
         },
         {
-          "name":"Share Your Ideas",
+          "name":"SHARE YOUR IDEAS",
           "url":"/shareideas"
         }
       ]
     
-      
-
     },
+   
     {
-      "name": "Services",
+      "name": "SERVICES",
       "url": "/blogs",
       "hasChildren":true,
       "children":[
         {
-          "name":"Arabic School",
+          "name":"ACC ARABIC SCHOOL",
           "url":"/school"
         },
         {
-          "name":"Driving Classes",
+          "name":"DRIVING CLASSES",
           "url":"/drivingclasses"
         },
         {
-          "name":"Translation Services",
+          "name":"TRANSLATION SERVICES",
           "url":"/translation"
         },
         {
-          "name":"Immigration Services",
+          "name":"IMMIGRATION SERVICES",
           "url":"/immigration"
         },
         {
-          "name":"ACC Soccer Team",
+          "name":"ACC UNITED SOCCER TEAM",
           "url":"/soccer"
         },
         {
-          "name":"IT Services",
+          "name":"IT SERVICES",
           "url":"/itservices"
         },
         {
-          "name":"Economic Consulting",
+          "name":"ECONMIC CONSULTATION",
           "url":"/econsultation"
         },
         {
-          "name":"Reading Club",
+          "name":"ARABIC READING CLUB",
           "url":"/readingclub"
         },
         {
-          "name":"Employment Assistance",
+          "name":"EMPLOYMENT ASSISTANCE",
           "url":"/jobs"
         }
       ]
     },
     {
-      "name": "Statements",
+      "name": "STATEMENTS",
       "url": "/statements"
     },
    
   
     {
-      "name": "Business",
+      "name": "BUSINESS DIRECTORY",
       "url": "/business/display"
-    },
-    {
-      "name": "About Us",
-      "url": "/blogs",
-      "hasChildren":true,
-      "children":[
-        {
-          "name":"about us",
-          "url":"/about"
-        },
-        {
-          "name":"Board of Directors",
-          "url":"/board"
-        },
-        {
-          "name":"Contact Us",
-          "url":"/contact"
-        },
-        {
-          "name":"Terms Of Use",
-          "url":"/terms"
-        }
-      ]
     }
+    
    
   ],
   "footer": [
