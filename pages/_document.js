@@ -7,6 +7,8 @@ const Document = () => {
   return (
     <Html lang="en">
       <Head>
+     
+
         {/* favicon */}
         <link
           rel="shortcut icon"
