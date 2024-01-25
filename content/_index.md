@@ -38,7 +38,7 @@ services:
   - title: "ACC Arabic Language School"
     content: "ACC's Arabic School offers young children a vibrant introduction to the Arabic language. In our fun-filled sessions, kids engage with basic Arabic through interactive games, storytelling, and cultural activities. It's an exciting way to start their journey into a rich linguistic and cultural world."
     images:
-      - "/images/school.png"
+      - "/images/school4.jpg"
       # - "/images/service-slide-2.png"
       # - "/images/service-slide-3.png"
     button:
