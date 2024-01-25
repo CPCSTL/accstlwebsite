@@ -38,7 +38,7 @@ services:
   - title: "ACC Arabic Language School"
     content: "ACC's Arabic School offers young children a vibrant introduction to the Arabic language. In our fun-filled sessions, kids engage with basic Arabic through interactive games, storytelling, and cultural activities. It's an exciting way to start their journey into a rich linguistic and cultural world."
     images:
-      - "/images/school4.jpg"
+      - "/images/school4.jpeg"
       # - "/images/service-slide-2.png"
       # - "/images/service-slide-3.png"
     button:
@@ -66,16 +66,16 @@ services:
       label: Show Interest
       link: /soccer
 
-  - title: "Other Community Services"
-    content: "At ACC, we offer a diverse range of services designed to enrich and support our community. From language translation assistance to cultural workshops, health and wellness programs to job support services, we are committed to providing resources that cater to the unique needs of our community members. Our aim is to create a supportive and inclusive environment where everyone can access the help they need and feel connected to a thriving community network."
-    images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
-    button:
-      enable: true
-      label: Check Services
-      link: /
+  # - title: "Other Community Services"
+  #   content: "At ACC, we offer a diverse range of services designed to enrich and support our community. From language translation assistance to cultural workshops, health and wellness programs to job support services, we are committed to providing resources that cater to the unique needs of our community members. Our aim is to create a supportive and inclusive environment where everyone can access the help they need and feel connected to a thriving community network."
+  #   images:
+  #     - "/images/service-slide-1.png"
+  #     - "/images/service-slide-2.png"
+  #     - "/images/service-slide-3.png"
+  #   button:
+  #     enable: true
+  #     label: Check Services
+  #     link: /
 
 # workflow
 workflow: 

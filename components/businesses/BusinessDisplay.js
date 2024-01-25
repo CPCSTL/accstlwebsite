@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 
 const businesses = [
     // Middle Eastern Restaurants
-        {"category": "Phone/Repair Store", "name": "Phone Geeks", "address": "141 Arnold Crossroads Center, Arnold 63010", "phone": "(314) 333-3324"},
+        {"category": "Phone/Repair Store", "name": "Phone Geeks", "address": "141 Arnold Crossroads Center, Arnold, MO 63010", "phone": "(314) 333-3324"},
     {"category": "Phone/Repair Store", "name": "Phone Zone - Repair and Phones", "address": "14748 Manchester Rd, Ballwin 63011", "phone": "636-256-1702"},
     {"category": "Phone/Repair Store", "name": "St.louis Phone Center", "address": "6921 Gravois Ave, St.louis 63116", "phone": "314-688-9006"},
 

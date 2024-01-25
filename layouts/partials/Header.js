@@ -114,7 +114,7 @@ const Header = () => {
             <Link className="btn btn-primary w-50px z-0 py-[14px]" href={link} rel="" target="_blank">
               {label}
             </Link>
-            <Link className="btn btn-primary text-10px w-50px z-0 py-[14px]" href={link} rel="" target="_blank">
+            <Link className="btn btn-primary text-10px w-50px z-0 py-[14px]" href="https://www.zeffy.com/en-US/ticketing/69a933ff-a452-443f-971d-02271725b29d" rel="" target="_blank">
               Support Us
             </Link>
           </div>
