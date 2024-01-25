@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
+import { Select, MenuItem, FormControl, InputLabel } from '@mui/material';
+
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -8,6 +10,10 @@ import Typography from '@mui/material/Typography';
 
 const businesses = [
     // Middle Eastern Restaurants
+        {"category": "Phone/Repair Store", "name": "Phone Geeks", "address": "141 Arnold Crossroads Center, Arnold 63010", "phone": "(314) 333-3324"},
+    {"category": "Phone/Repair Store", "name": "Phone Zone - Repair and Phones", "address": "14748 Manchester Rd, Ballwin 63011", "phone": "636-256-1702"},
+    {"category": "Phone/Repair Store", "name": "St.louis Phone Center", "address": "6921 Gravois Ave, St.louis 63116", "phone": "314-688-9006"},
+
     {"category": "Middle Eastern Restaurant", "name": "Sultan Mediterranean Restaurant", "address": "4200 Manchester Ave, St. Louis", "phone": "(314) 390-2020"},
     {"category": "Middle Eastern Restaurant", "name": "Ranoush", "address": "386 N Euclid Ave, St. louis", "phone": "(314) 833-4400"},
     {"category": "Middle Eastern Restaurant", "name": "Majeed Mediterranean Restaurant", "address": "4601 Gravois Ave, St. Louis", "phone": "(314) 282-0981"},
@@ -59,36 +65,78 @@ const BusinessCard = ({ business }) => (
     <Card variant="outlined" sx={{ marginBottom: 2 }}>
         <CardContent>
             <Typography variant="h5">{business.name}</Typography>
-            <Typography variant="body2">{business.address}</Typography>
-            {business.phone && <Typography variant="body2">Phone: {business.phone}</Typography>}
+            {/* Example clickable link for the address; you might want to replace it with a more specific URL */}
+            <Typography variant="body2" sx={{color:"blue"}}>
+                <a href={`https://maps.google.com/?q=${business.address}`} target="_blank" rel="noopener noreferrer">
+                    {business.address}
+                </a>
+            </Typography>
+            {business.phone && (
+                <Typography variant="body2" sx={{color:"#5072A7"}}>
+                    <a href={`tel:${business.phone}`}>
+                        Phone: {business.phone}
+                    </a>
+                </Typography>
+            )}
         </CardContent>
     </Card>
 );
 
-const CategoriesFilter = ({ onSelectCategory }) => (
-    <Box sx={{ display:"grid",
-        gridTemplateColumns:{
-            xs:"repeat(2,1fr)",
-            sm:"repeat(2,1fr)",
-            md:"repeat(3,1fr)",
-            lg:"repeat(5,1fr)",
-            xl:"repeat(5,1fr)",
-        },
-        gridAutoRows:"minmax(75px,auto)",
-        gridGap:2,
-        width:"100%",
-        
-        ml:"auto",
-        mr:"auto",
-        mb:2
-}}>
-        <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('Middle Eastern Restaurant')}><p style={{width:"fit-content"}}>Middle Eastern Restaurants</p></Button>
-        <Button variant="outlined" sx={{width:"100%"}}  onClick={() => onSelectCategory('Immigration Attorney')}>Immigration Attorneys </Button>
-        <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('Hair Saloon')}> Hair Saloons</Button>
-        <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('Grocery Store')}>Grocery Stores</Button>
-        <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('')}>Show All</Button>
-    </Box>
+
+const CategoriesFilter = ({ onSelectCategory, selectedCategory }) => (
+    <FormControl sx={{ m: 1, minWidth: "100%" }}>
+        <InputLabel sx={{width:"50%"}} id="category-select-label">Category</InputLabel>
+        <Select
+        sx={{width:{
+            sx:"100%",
+            md:"50%"
+
+
+        }}}
+            labelId="category-select-label"
+            id="category-select"
+            value={selectedCategory}
+            label="Category"
+            onChange={(event) => onSelectCategory(event.target.value)}
+        >
+            <MenuItem value=""><em>Reset</em></MenuItem>
+            
+            <MenuItem value="Immigration Attorney">Immigration Attorney</MenuItem>
+            <MenuItem value="Middle Eastern Restaurant">Middle Eastern Restaurants</MenuItem>
+            <MenuItem value="Phone/Repair Store">Phone/Repair Stores</MenuItem>
+           
+            <MenuItem value="Hair Saloon">Hair Saloons</MenuItem>
+            <MenuItem value="Grocery Store">Grocery Stores</MenuItem>
+            
+        </Select>
+    </FormControl>
 );
+
+
+// const CategoriesFilter = ({ onSelectCategory }) => (
+//     <Box sx={{ display:"grid",
+//         gridTemplateColumns:{
+//             xs:"repeat(2,1fr)",
+//             sm:"repeat(2,1fr)",
+//             md:"repeat(3,1fr)",
+//             lg:"repeat(5,1fr)",
+//             xl:"repeat(5,1fr)",
+//         },
+//         gridAutoRows:"minmax(75px,auto)",
+//         gridGap:2,
+//         width:"100%",
+        
+//         ml:"auto",
+//         mr:"auto",
+//         mb:2
+// }}>
+//         <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('Middle Eastern Restaurant')}><p style={{width:"fit-content"}}>Middle Eastern Restaurants</p></Button>
+//         <Button variant="outlined" sx={{width:"100%"}}  onClick={() => onSelectCategory('Immigration Attorney')}>Immigration Attorneys </Button>
+//         <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('Hair Saloon')}> Hair Saloons</Button>
+//         <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('Grocery Store')}>Grocery Stores</Button>
+//         <Button variant="outlined" sx={{width:"100%"}} onClick={() => onSelectCategory('')}>Show All</Button>
+//     </Box>
+// );
 
 const BusinessList = () => {
     const [selectedCategory, setSelectedCategory] = useState('');
@@ -104,7 +152,7 @@ const BusinessList = () => {
             ml: 'auto',
             mr: 'auto',
         }}>
-            <CategoriesFilter onSelectCategory={setSelectedCategory} />
+            <CategoriesFilter onSelectCategory={setSelectedCategory} selectCategory={selectedCategory} />
             {filteredBusinesses.map((business, index) => (
                 <BusinessCard key={index} business={business} />
             ))}

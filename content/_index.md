@@ -1,7 +1,8 @@
 ---
 banner:
-  title: Welcome to Arab Culture Center
-  content: a place where you can learn, experience, and appreciate the richness of Arabic culture.Our center is dedicated to promoting cross-cultural understanding and appreciation of the Arabic- speaking world, its history, language, traditions, and customs.
+  title: Welcome to Arab Cultural Center
+  content: "A place where you can learn, experience, and appreciate the richness of Arabic culture.
+  Our center is dedicated to promoting cross-cultural understanding and appreciation of the Arabic- speaking world, its history, language, traditions, and customs."
 
   image: "https://accstl.org/assets/img/acc-logo.png"
   button:

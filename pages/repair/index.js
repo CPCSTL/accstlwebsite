@@ -4,7 +4,7 @@ import React from 'react';
 
 const MyPage = () => {
     return (
-        <div>
+        <div style={{textAlign:"center", paddingTop:"10vh"}}>
             <h1>My Booking Page</h1>
             <RepairDeskWidget />
             {/* Other content of your page */}

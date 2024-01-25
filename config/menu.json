@@ -79,7 +79,7 @@
           "url":"/itservices"
         },
         {
-          "name":"ECONMIC CONSULTATION",
+          "name":"ECONOMIC CONSULTATION",
           "url":"/econsultation"
         },
         {
@@ -99,7 +99,7 @@
    
   
     {
-      "name": "BUSINESS DIRECTORY",
+      "name": "BUSINESS",
       "url": "/business/display"
     }
     

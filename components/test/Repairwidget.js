@@ -9,8 +9,9 @@ const RepairDeskWidget = () => {
     useEffect(() => {
         const scriptUrl = "https://phonegeeks.repairdesk.co/widgets/repair_widget.js?token=5dae419862a401571701144&width=100%&scrolling=no";
         const params = parseScriptUrl(scriptUrl);
+        console.log(params);
 
-        const iframeUrl = `https://app.repairdesk.co/widget.php?r=site/repairwidget&token=${params.token}&width=${params.width}&scrolling=${params.scrolling}`;
+        const iframeUrl = `https://${params.host}/widget.php?r=site/repairwidget&token=${params.token}&width=${params.width}&scrolling=${params.scrolling}`;
         setIframeSrc(iframeUrl);
     }, []);
 
@@ -19,15 +20,18 @@ const RepairDeskWidget = () => {
     };
 
     return (
-        <div>
+        <div style={{height:"fit-content", overflow:"auto", paddingLeft:"5%", paddingRight:"5%"}}>
             {loading && <div>Loading...</div>} {/* Loading indicator */}
             <iframe 
+            
                 id="repair-desk-widget" 
                 src={iframeSrc} 
                 width="100%" 
-                scrolling="no"
-                frameBorder="0"
-                style={{ height: '600px' }} // Adjust height as needed
+            height="1200px"
+    
+                scrolling="yes"
+                frameBorder="2px"
+                style={{marginBottom:"100px" , overflow:"auto" }} // Adjust height as needed
                 onLoad={handleIframeLoad} // Event handler for iframe load
             ></iframe>
         </div>
