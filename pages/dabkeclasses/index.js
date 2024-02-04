@@ -1,12 +1,13 @@
 import Base from '@layouts/Baseof'
-import Driving from 'components/services/Driving'
+
+import Dabke from 'components/services/debka'
 import React from 'react'
 
 const Index = () => {
   return (
    <Base>
    
-   <Driving/>
+   <Dabke/>
    
    </Base>
   )

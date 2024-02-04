@@ -41,7 +41,7 @@ const Terms = () => {
        border: "0px solid rgb(217, 217, 227)"
      }}
    >
-     Terms of Use for the Arab Culture Center St.Louis
+     Terms of Use for the Arab cultural Center St.Louis
    </h1>
    <h2
      style={{
@@ -63,7 +63,7 @@ const Terms = () => {
        border: "0px solid rgb(217, 217, 227)"
      }}
    >
-     Welcome to the Arab Culture Center St.Louis (ACCSTL). These Terms of Use
+     Welcome to the Arab cultural Center St.Louis (ACCSTL). These Terms of Use
      ("Terms") govern your access to and use of our services, including our
      website, mobile applications, events, educational programs, and all other
      services provided by ACCSTL (collectively, "Services"). By accessing or using
@@ -96,7 +96,7 @@ const Terms = () => {
          >
            Services Description
          </strong>
-         : ACCSTL offers a range of services aimed at promoting Arab culture and
+         : ACCSTL offers a range of services aimed at promoting Arab cultural and
          heritage, including but not limited to educational programs, cultural
          events, online resources, and community forums.
        </p>

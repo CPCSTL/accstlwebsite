@@ -1,7 +1,10 @@
+import { serviceMessages } from '@config/serviceMessages'
+import MessageBox from '@layouts/ui/serviceMessageBox'
 import { Box } from '@mui/material'
 import React from 'react'
 
 const Soccer = () => {
+  const message = serviceMessages.soccer
   return (
    <Box sx={{
     width: '100%',
@@ -20,6 +23,8 @@ const Soccer = () => {
 
    }}>
     <h3>Sign up for ACC United Soccer Team </h3>
+
+    <MessageBox message={message} />
 
 
 
