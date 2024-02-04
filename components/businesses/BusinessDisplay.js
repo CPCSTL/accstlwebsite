@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 
 const businesses = [
     // Middle Eastern Restaurants
+    {"category": "Financial Services", "name": "Global Tax & Finance", "address": "4500 Telegraph STE 202, St. Louis MO 63129", "phone": "314-690-1670", "email": "Nadya@gtfmo.com"},
         {"category": "Phone/Repair Store", "name": "Phone Geeks", "address": "141 Arnold Crossroads Center, Arnold, MO 63010", "phone": "(314) 333-3324"},
     {"category": "Phone/Repair Store", "name": "Phone Zone - Repair and Phones", "address": "14748 Manchester Rd, Ballwin 63011", "phone": "636-256-1702"},
     {"category": "Phone/Repair Store", "name": "St.louis Phone Center", "address": "6921 Gravois Ave, St.louis 63116", "phone": "314-688-9006"},
@@ -65,7 +66,6 @@ const BusinessCard = ({ business }) => (
     <Card variant="outlined" sx={{ marginBottom: 2 }}>
         <CardContent>
             <Typography variant="h5">{business.name}</Typography>
-            {/* Example clickable link for the address; you might want to replace it with a more specific URL */}
             <Typography variant="body2" sx={{color:"blue"}}>
                 <a href={`https://maps.google.com/?q=${business.address}`} target="_blank" rel="noopener noreferrer">
                     {business.address}
@@ -78,9 +78,17 @@ const BusinessCard = ({ business }) => (
                     </a>
                 </Typography>
             )}
+            {business.email && (
+                <Typography variant="body2" sx={{ color: "#5072A7" }}>
+                    <a href={`mailto:${business.email}`}>
+                        Email: {business.email}
+                    </a>
+                </Typography>
+            )}
         </CardContent>
     </Card>
 );
+
 
 
 const CategoriesFilter = ({ onSelectCategory, selectedCategory }) => (
@@ -102,6 +110,7 @@ const CategoriesFilter = ({ onSelectCategory, selectedCategory }) => (
             <MenuItem value=""><em>Reset</em></MenuItem>
             
             <MenuItem value="Immigration Attorney">Immigration Attorney</MenuItem>
+            <MenuItem value="Financial Services">Financial Services</MenuItem>
             <MenuItem value="Middle Eastern Restaurant">Middle Eastern Restaurants</MenuItem>
             <MenuItem value="Phone/Repair Store">Phone/Repair Stores</MenuItem>
            
