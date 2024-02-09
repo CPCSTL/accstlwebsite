@@ -64,9 +64,9 @@ const index = () => {
                        </div>
                          <div className=" ">
                          <div className="bg-white min-w-full px-5  min-h-full  flex-col rounded-lg shadow-md overflow-hidden">
-                             <img src="https://accstl.org/assets/img/team/team-3.jpg" alt="Mohammad Abdulfatah" className="w-full h-50  object-center" />
+                             <img src="https://accstl.org/assets/img/team/team-11.jpg" alt="Mohammad Abdulfatah" className="w-full h-50  object-center" />
                              <div className="flex flex-col align-start justify-items-center h-100%">
-                                 <h5 className=" text-center">Nadya Kanim</h5>
+                                 <h5 className=" text-center">Talal AbouChleih</h5>
                                  <p className="text-gray-600">Treasurer of ACC</p>
                                  
                              </div>
@@ -93,11 +93,13 @@ const index = () => {
                     <div className="flex flex-wrap justify-center">
                         {/* Director Card */}
                        {/* Member Card */}
+                    
+                            {/* ... other directors */}
                     <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                          <img src="https://accstl.org/assets/img/team/team-11.jpg" alt="Talal AbouChleih" className="w-full h-56  object-center" />
+                          <img src="https://accstl.org/assets/img/team/team-14.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
                             <div className="p-4">
-                             <h4 className="text-lg font-semibold">Talal AbouChleih</h4>
+                             <h4 className="text-lg font-semibold">Layla Azmi Goushey</h4>
                              <div className="flex justify-center mt-3">
                              <a href="#" className="text-blue-600 hover:text-blue-800">
                              <i className="bi bi-linkedin"></i>
@@ -106,25 +108,26 @@ const index = () => {
                          </div>
                         </div>
                      </div> 
-                        {/* ... other directors */}
-                  
+                    
+
+                       <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
+                        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                          <img src="https://accstl.org/assets/img/team/team-13.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
+                            <div className="p-4">
+                             <h4 className="text-lg font-semibold">Fida Ahmed Barakat</h4>
+                             <div className="flex justify-center mt-3">
+                             <a href="#" className="text-blue-600 hover:text-blue-800">
+                             <i className="bi bi-linkedin"></i>
+                             </a>
+                          </div>
+                         </div>
+                        </div>
+                     </div> 
 
 
                  
                         {/* ... other directors */}
-                    <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
-                        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                          <img src="https://accstl.org/assets/img/team/team-9.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
-                            <div className="p-4">
-                             <h4 className="text-lg font-semibold">Hala Karttan</h4>
-                             <div className="flex justify-center mt-3">
-                             <a href="#" className="text-blue-600 hover:text-blue-800">
-                             <i className="bi bi-linkedin"></i>
-                             </a>
-                          </div>
-                         </div>
-                        </div>
-                     </div> 
+                   
                         {/* ... other directors */}
                     <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -140,21 +143,7 @@ const index = () => {
                         </div>
                      </div> 
                    
-                        {/* ... other directors */}
-
-                    <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
-                        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                          <img src="https://accstl.org/assets/img/team/team-12.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
-                            <div className="p-4">
-                             <h4 className="text-lg font-semibold">Yara Altawil</h4>
-                             <div className="flex justify-center mt-3">
-                             <a href="#" className="text-blue-600 hover:text-blue-800">
-                             <i className="bi bi-linkedin"></i>
-                             </a>
-                          </div>
-                         </div>
-                        </div>
-                     </div> 
+                  
 
                      {/* ... other directors */}
 
@@ -171,12 +160,11 @@ const index = () => {
                          </div>
                         </div>
                      </div> 
-                        {/* ... other directors */}
-                    <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
+                      <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                          <img src="https://accstl.org/assets/img/team/team-13.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
+                          <img src="https://accstl.org/assets/img/team/team-9.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
                             <div className="p-4">
-                             <h4 className="text-lg font-semibold">Fida Ahmed Barakat</h4>
+                             <h4 className="text-lg font-semibold">Hala Karttan</h4>
                              <div className="flex justify-center mt-3">
                              <a href="#" className="text-blue-600 hover:text-blue-800">
                              <i className="bi bi-linkedin"></i>
@@ -185,34 +173,9 @@ const index = () => {
                          </div>
                         </div>
                      </div> 
-                        {/* ... other directors */}
-                    <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
-                        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                          <img src="https://accstl.org/assets/img/team/team-14.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
-                            <div className="p-4">
-                             <h4 className="text-lg font-semibold">Layla Azmi Goushey</h4>
-                             <div className="flex justify-center mt-3">
-                             <a href="#" className="text-blue-600 hover:text-blue-800">
-                             <i className="bi bi-linkedin"></i>
-                             </a>
-                          </div>
-                         </div>
-                        </div>
-                     </div> 
-                        {/* ... other directors */}
-                    <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
-                        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                          <img src="https://accstl.org/assets/img/team/team-15.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
-                            <div className="p-4">
-                             <h4 className="text-lg font-semibold">Mona Sabau</h4>
-                             <div className="flex justify-center mt-3">
-                             <a href="#" className="text-blue-600 hover:text-blue-800">
-                             <i className="bi bi-linkedin"></i>
-                             </a>
-                          </div>
-                         </div>
-                        </div>
-                     </div> 
+                  
+                  
+                     
                         {/* ... other directors */}
                     <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -241,14 +204,13 @@ const index = () => {
                          </div>
                         </div>
                      </div> 
-                        {/* ... other directors */}
-                 
-                        {/* ... other directors */}
+                       
+                     {/* ... other directors */}
                     <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                          <img src="https://accstl.org/assets/img/team/team-19.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
+                          <img src="https://accstl.org/assets/img/team/team-21.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
                             <div className="p-4">
-                             <h4 className="text-lg font-semibold">Abdal Aziz Alfarra</h4>
+                             <h4 className="text-lg font-semibold">Fatimah Alkhshali</h4>
                              <div className="flex justify-center mt-3">
                              <a href="#" className="text-blue-600 hover:text-blue-800">
                              <i className="bi bi-linkedin"></i>
@@ -257,6 +219,7 @@ const index = () => {
                          </div>
                         </div>
                      </div> 
+                   
                         {/* ... other directors */}
                     <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -271,34 +234,9 @@ const index = () => {
                          </div>
                         </div>
                      </div> 
+                    
                         {/* ... other directors */}
-                    <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
-                        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                          <img src="https://accstl.org/assets/img/team/team-21.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
-                            <div className="p-4">
-                             <h4 className="text-lg font-semibold">Fatimah Alkhshali</h4>
-                             <div className="flex justify-center mt-3">
-                             <a href="#" className="text-blue-600 hover:text-blue-800">
-                             <i className="bi bi-linkedin"></i>
-                             </a>
-                          </div>
-                         </div>
-                        </div>
-                     </div> 
-                        {/* ... other directors */}
-                    <div className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 p-4">
-                        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                          <img src="https://accstl.org/assets/img/team/team-23.jpg" alt="Talal AbouChleih" className="w-full h-56 object-center md:object-cover" />
-                            <div className="p-4">
-                             <h4 className="text-lg font-semibold">Fatema Medhat</h4>
-                             <div className="flex justify-center mt-3">
-                             <a href="#" className="text-blue-600 hover:text-blue-800">
-                             <i className="bi bi-linkedin"></i>
-                             </a>
-                          </div>
-                         </div>
-                        </div>
-                     </div> 
+                   
                         {/* ... other directors */}
 
 

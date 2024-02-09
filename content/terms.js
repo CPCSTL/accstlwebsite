@@ -41,7 +41,7 @@ const Terms = () => {
        border: "0px solid rgb(217, 217, 227)"
      }}
    >
-     Terms of Use for the Arab cultural Center St.Louis
+     Terms of Use for the Arab cultural Center St.Louis.
    </h1>
    <h2
      style={{
