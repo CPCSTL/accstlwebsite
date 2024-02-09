@@ -56,7 +56,7 @@ const index = () => {
                          <div className="bg-white min-w-full px-5 min-h-full  flex-col rounded-lg shadow-md overflow-hidden">
                              <img src="https://accstl.org/assets/img/team/team-2.jpg" alt="Mohammad Abdulfatah" className="w-full h-50  object-center" />
                              <div className="flex flex-col align-start justify-items-center">
-                                 <h5 className=" text-center">Mohammad Alkhazaaleh</h5>
+                                 <h5 className=" text-center">Shadi Alkhazaaleh</h5>
                                  <p className="text-gray-600">Secretary of ACC</p>
                                  
                              </div>
