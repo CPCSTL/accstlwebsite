@@ -22,6 +22,10 @@
           "url": "/contact"
         },
         {
+          "name": "STATEMENTS",
+          "url": "/statements"
+        },
+        {
           "name": "TERMS & CONDITIONS",
           "url": "/terms"
         }
@@ -94,9 +98,10 @@
         }
       ]
     },
+
     {
-      "name": "STATEMENTS",
-      "url": "/statements"
+      "name": "ACC STORE",
+      "url": "/store"
     },
 
     {
