@@ -4,91 +4,93 @@
       "name": "HOME",
       "url": "/"
     },
-     {
+    {
       "name": "ABOUT US",
       "url": "/blogs",
-      "hasChildren":true,
-      "children":[
+      "hasChildren": true,
+      "children": [
         {
-          "name":"ABOUT US",
-          "url":"/about"
+          "name": "ABOUT US",
+          "url": "/about"
         },
         {
-          "name":"BOARD OF DIRECTORS",
-          "url":"/board"
+          "name": "BOARD OF DIRECTORS",
+          "url": "/board"
         },
         {
-          "name":"CONTACT US",
-          "url":"/contact"
+          "name": "CONTACT US",
+          "url": "/contact"
         },
         {
-          "name":"TERMS & CONDITIONS",
-          "url":"/terms"
+          "name": "TERMS & CONDITIONS",
+          "url": "/terms"
         }
       ]
     },
     {
       "name": "GET INVOLVED",
       "url": "/blogs",
-      "hasChildren":true,
-      "children":[
-      
+      "hasChildren": true,
+      "children": [
         {
-          "name":"VOLUNTEER",
-          "url":"/volunteer"
+          "name": "VOLUNTEER",
+          "url": "/volunteer"
         },
         {
-          "name":"ARAB LADIES MEETUP",
-          "url":"/arabladysmeetup"
+          "name": "BECOME A MEMBER",
+          "url": "/bemember"
         },
         {
-          "name":"SHARE YOUR IDEAS",
-          "url":"/shareideas"
+          "name": "ARAB LADIES MEETUP",
+          "url": "/arabladysmeetup"
+        },
+        {
+          "name": "SHARE YOUR IDEAS",
+          "url": "/shareideas"
         }
       ]
-    
     },
-   
+
     {
       "name": "SERVICES",
       "url": "/blogs",
-      "hasChildren":true,
-      "children":[
+      "hasChildren": true,
+      "children": [
         {
-          "name":"ACC ARABIC SCHOOL",
-          "url":"/school"
+          "name": "ACC ARABIC SCHOOL",
+          "url": "/school"
         },
         {
-          "name":"DRIVING CLASSES",
-          "url":"/drivingclasses"
+          "name": "DRIVING CLASSES",
+          "url": "/drivingclasses"
         },
         {
-          "name":"TRANSLATION SERVICES",
-          "url":"/translation"
+          "name": "TRANSLATION SERVICES",
+          "url": "/translation"
         },
         {
-          "name":"IMMIGRATION SERVICES",
-          "url":"/immigration"
+          "name": "IMMIGRATION SERVICES",
+          "url": "/immigration"
         },
         {
-          "name":"ACC UNITED SOCCER TEAM",
-          "url":"/soccer"
+          "name": "ACC UNITED SOCCER TEAM",
+          "url": "/soccer"
         },
         {
-          "name":"IT SERVICES",
-          "url":"/itservices"
+          "name": "IT SERVICES",
+          "url": "/itservices"
         },
         {
-          "name":"ECONOMIC CONSULTATION",
-          "url":"/econsultation"
+          "name": "ECONOMIC CONSULTATION",
+          "url": "/econsultation"
         },
         {
-          "name":"ARABIC READING CLUB",
-          "url":"/readingclub"
+          "name": "ARABIC READING CLUB",
+          "url": "/readingclub"
         },
         {
-          "name":"EMPLOYMENT ASSISTANCE",
-          "url":"/jobs"
+          "name": "EMPLOYMENT ASSISTANCE",
+          "url": "/jobs"
         }
       ]
     },
@@ -96,17 +98,13 @@
       "name": "STATEMENTS",
       "url": "/statements"
     },
-   
-  
+
     {
       "name": "BUSINESS",
       "url": "/business/display"
     }
-    
-   
   ],
   "footer": [
-   
     {
       "name": "Community",
       "menu": [
@@ -126,7 +124,6 @@
           "text": "Share Your Ideas",
           "url": "/shareideas"
         }
-       
       ]
     },
     {
@@ -169,7 +166,7 @@
           "text": "Contact Us",
           "url": "/contact"
         },
-       
+
         {
           "text": "Terms & Conditions",
           "url": "#"
