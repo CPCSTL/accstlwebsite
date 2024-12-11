@@ -179,26 +179,6 @@ const index = () => {
                 <div className="w-full p-4 sm:w-1/3 md:w-1/4 lg:w-1/4">
                   <div className="overflow-hidden rounded-lg bg-white shadow-md">
                     <img
-                      src="https://accstl.org/assets/img/team/team-22.jpg"
-                      alt="Talal AbouChleih"
-                      className="h-56 w-full object-center md:object-cover"
-                    />
-                    <div className="p-4">
-                      <h4 className="text-lg font-semibold">Muhammad Yadak</h4>
-                      <div className="mt-3 flex justify-center">
-                        <a
-                          href="#"
-                          className="text-blue-600 hover:text-blue-800"
-                        >
-                          <i className="bi bi-linkedin"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full p-4 sm:w-1/3 md:w-1/4 lg:w-1/4">
-                  <div className="overflow-hidden rounded-lg bg-white shadow-md">
-                    <img
                       src="https://accstl.org/assets/img/team/team-9.jpg"
                       alt="Talal AbouChleih"
                       className="h-56 w-full object-center md:object-cover"
